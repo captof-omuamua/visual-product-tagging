@@ -1,0 +1,3423 @@
+{
+  "ok": false,
+  "downloads": [
+    {
+      "url": "https://amazon-berkeley-objects.s3.amazonaws.com/archives/abo-listings.tar",
+      "path": "data/raw/abo/abo-listings.tar",
+      "bytes": 87480320,
+      "sha256": "b7f7ceacb328fa5ab6e143b88e1f948443a877cfc95b67ff09c8ebabd50644e3"
+    },
+    {
+      "url": "https://amazon-berkeley-objects.s3.amazonaws.com/images/metadata/images.csv.gz",
+      "path": "data/raw/abo/images.csv.gz",
+      "bytes": 6430535,
+      "sha256": "915263ef354d7a5d3503e899e610082f510c0011cccd5b4dc4f4c5efa86ef539"
+    }
+  ],
+  "types": [
+    {
+      "product_type": "SHOES",
+      "listings": 12965,
+      "products": 5749,
+      "with_main_image": 5748,
+      "with_english_title": 4790,
+      "india_share": 0.587,
+      "english_fill": {
+        "color": 0.708,
+        "material": 0.356,
+        "pattern": 0.15,
+        "style": 0.726,
+        "fabric_type": 0.091,
+        "finish_type": 0.0,
+        "item_shape": 0.0
+      },
+      "families": 47,
+      "top_family_share": 0.221,
+      "title_tokens_p50": 25.0,
+      "title_tokens_p95": 33.0,
+      "titles_over_limit": 0.0,
+      "token_counts_exact": true,
+      "top_values": {
+        "color": [
+          [
+            "black",
+            736
+          ],
+          [
+            "navy",
+            250
+          ],
+          [
+            "tan",
+            236
+          ],
+          [
+            "brown",
+            223
+          ],
+          [
+            "grey",
+            194
+          ],
+          [
+            "white",
+            161
+          ],
+          [
+            "blue",
+            140
+          ],
+          [
+            "pink",
+            93
+          ],
+          [
+            "beige",
+            78
+          ],
+          [
+            "red",
+            76
+          ],
+          [
+            "olive",
+            48
+          ],
+          [
+            "multi",
+            41
+          ],
+          [
+            "green",
+            36
+          ],
+          [
+            "gold",
+            31
+          ],
+          [
+            "black leather",
+            26
+          ],
+          [
+            "cherry",
+            26
+          ],
+          [
+            "nude",
+            25
+          ],
+          [
+            "l.grey",
+            23
+          ],
+          [
+            "black suede",
+            22
+          ],
+          [
+            "blue navy",
+            19
+          ]
+        ],
+        "material": [
+          [
+            "synthetic",
+            529
+          ],
+          [
+            "mesh",
+            521
+          ],
+          [
+            "polyurethane",
+            248
+          ],
+          [
+            "leather",
+            225
+          ],
+          [
+            "canvas",
+            182
+          ],
+          [
+            "fabric",
+            119
+          ],
+          [
+            "polyester",
+            57
+          ],
+          [
+            "knit",
+            40
+          ],
+          [
+            "pu",
+            32
+          ],
+          [
+            "suede",
+            29
+          ],
+          [
+            "cotton",
+            27
+          ],
+          [
+            "nylon",
+            13
+          ],
+          [
+            "denim",
+            11
+          ],
+          [
+            "mens",
+            4
+          ],
+          [
+            "eva",
+            3
+          ],
+          [
+            "mesh; fabric",
+            3
+          ],
+          [
+            "rubber",
+            2
+          ],
+          [
+            "faux leather",
+            2
+          ],
+          [
+            "satin",
+            1
+          ],
+          [
+            "textile",
+            1
+          ]
+        ],
+        "pattern": [
+          [
+            "solid",
+            682
+          ],
+          [
+            "textured",
+            100
+          ],
+          [
+            "color block",
+            39
+          ],
+          [
+            "printed",
+            15
+          ],
+          [
+            "stripe play",
+            13
+          ],
+          [
+            "grindle effect",
+            10
+          ],
+          [
+            "stripes",
+            3
+          ]
+        ],
+        "style": [
+          [
+            "running shoes",
+            632
+          ],
+          [
+            "sneakers",
+            459
+          ],
+          [
+            "derby",
+            310
+          ],
+          [
+            "ankle-strap",
+            225
+          ],
+          [
+            "walking shoes",
+            197
+          ],
+          [
+            "loafers",
+            166
+          ],
+          [
+            "ballet flats",
+            149
+          ],
+          [
+            "low-top",
+            112
+          ],
+          [
+            "oxford",
+            92
+          ],
+          [
+            "slippers",
+            90
+          ],
+          [
+            "flip-flops",
+            73
+          ],
+          [
+            "brogue",
+            66
+          ],
+          [
+            "chelsea boots",
+            46
+          ],
+          [
+            "floaters",
+            40
+          ],
+          [
+            "fisherman sandals",
+            35
+          ],
+          [
+            "slip on",
+            32
+          ],
+          [
+            "thong sandals",
+            30
+          ],
+          [
+            "ankle boots",
+            26
+          ],
+          [
+            "closed-toe pumps",
+            23
+          ],
+          [
+            "low-top sneakers",
+            20
+          ]
+        ],
+        "fabric_type": [
+          [
+            "leather",
+            114
+          ],
+          [
+            "100% leather upper",
+            63
+          ],
+          [
+            "textile",
+            57
+          ],
+          [
+            "suede",
+            55
+          ],
+          [
+            "100% synthetic",
+            29
+          ],
+          [
+            "100% leather",
+            20
+          ],
+          [
+            "suede upper & genuine shearling lining",
+            15
+          ],
+          [
+            "100% textile",
+            12
+          ],
+          [
+            "100% polyester",
+            11
+          ],
+          [
+            "100% suede upper",
+            11
+          ],
+          [
+            "100% canvas",
+            11
+          ],
+          [
+            "velvet",
+            9
+          ],
+          [
+            "fabric or textile",
+            7
+          ],
+          [
+            "satin",
+            7
+          ],
+          [
+            "synthetic",
+            6
+          ],
+          [
+            "textile upper & genuine shearling lining",
+            6
+          ],
+          [
+            "leather/suede",
+            6
+          ],
+          [
+            "textile/calf hair",
+            4
+          ],
+          [
+            "56% wool, 26% polyester, 9% nylon, 8% viscose, 1% other fibers",
+            4
+          ],
+          [
+            "100% polyurethane",
+            4
+          ]
+        ],
+        "finish_type": [],
+        "item_shape": [],
+        "color_standardized": [
+          [
+            "black",
+            1016
+          ],
+          [
+            "brown",
+            718
+          ],
+          [
+            "blue",
+            603
+          ],
+          [
+            "grey",
+            383
+          ],
+          [
+            "white",
+            247
+          ],
+          [
+            "red",
+            196
+          ],
+          [
+            "pink",
+            167
+          ],
+          [
+            "beige",
+            166
+          ],
+          [
+            "green",
+            156
+          ],
+          [
+            "multi",
+            116
+          ],
+          [
+            "gold",
+            54
+          ],
+          [
+            "silver",
+            46
+          ],
+          [
+            "purple",
+            28
+          ],
+          [
+            "yellow",
+            28
+          ],
+          [
+            "orange",
+            12
+          ],
+          [
+            "off-white",
+            6
+          ],
+          [
+            "tan",
+            5
+          ],
+          [
+            "ivory",
+            5
+          ],
+          [
+            "navy blue",
+            2
+          ],
+          [
+            "bronze",
+            1
+          ]
+        ]
+      },
+      "checks": {
+        "english_fill": false,
+        "families": true,
+        "size": true
+      }
+    },
+    {
+      "product_type": "CHAIR",
+      "listings": 2100,
+      "products": 1934,
+      "with_main_image": 1933,
+      "with_english_title": 1575,
+      "india_share": 0.028,
+      "english_fill": {
+        "color": 0.73,
+        "material": 0.547,
+        "pattern": 0.014,
+        "style": 0.375,
+        "fabric_type": 0.11,
+        "finish_type": 0.017,
+        "item_shape": 0.038
+      },
+      "families": 28,
+      "top_family_share": 0.255,
+      "title_tokens_p50": 21.0,
+      "title_tokens_p95": 31.0,
+      "titles_over_limit": 0.0,
+      "token_counts_exact": true,
+      "top_values": {
+        "color": [
+          [
+            "black",
+            97
+          ],
+          [
+            "grey",
+            82
+          ],
+          [
+            "brown",
+            79
+          ],
+          [
+            "beige",
+            69
+          ],
+          [
+            "charcoal",
+            50
+          ],
+          [
+            "blue",
+            49
+          ],
+          [
+            "navy",
+            39
+          ],
+          [
+            "light grey",
+            36
+          ],
+          [
+            "dark grey",
+            26
+          ],
+          [
+            "cream",
+            25
+          ],
+          [
+            "white",
+            25
+          ],
+          [
+            "gray",
+            24
+          ],
+          [
+            "linen",
+            23
+          ],
+          [
+            "cognac",
+            19
+          ],
+          [
+            "driftwood",
+            18
+          ],
+          [
+            "stone",
+            16
+          ],
+          [
+            "dove",
+            16
+          ],
+          [
+            "red",
+            15
+          ],
+          [
+            "slate",
+            13
+          ],
+          [
+            "natural",
+            13
+          ]
+        ],
+        "material": [
+          [
+            "wood",
+            138
+          ],
+          [
+            "leather",
+            129
+          ],
+          [
+            "stone",
+            129
+          ],
+          [
+            "textile",
+            99
+          ],
+          [
+            "polyester",
+            98
+          ],
+          [
+            "metal",
+            39
+          ],
+          [
+            "velvet",
+            31
+          ],
+          [
+            "faux leather",
+            30
+          ],
+          [
+            "aluminum",
+            28
+          ],
+          [
+            "plastic",
+            24
+          ],
+          [
+            "steel",
+            20
+          ],
+          [
+            "mesh",
+            17
+          ],
+          [
+            "linen",
+            16
+          ],
+          [
+            "nylon",
+            15
+          ],
+          [
+            "alloy steel",
+            11
+          ],
+          [
+            "wicker",
+            10
+          ],
+          [
+            "brass",
+            10
+          ],
+          [
+            "polyurethane",
+            9
+          ],
+          [
+            "pvc",
+            8
+          ],
+          [
+            "velvet, hardwood frame, metal legs",
+            8
+          ]
+        ],
+        "pattern": [
+          [
+            "solid",
+            10
+          ],
+          [
+            "seat",
+            10
+          ],
+          [
+            "plain-coloured",
+            3
+          ],
+          [
+            "patchwork",
+            2
+          ],
+          [
+            "chair",
+            2
+          ],
+          [
+            "info not available",
+            1
+          ]
+        ],
+        "style": [
+          [
+            "transitional",
+            121
+          ],
+          [
+            "modern",
+            88
+          ],
+          [
+            "mid-century modern",
+            76
+          ],
+          [
+            "rustic",
+            57
+          ],
+          [
+            "chair",
+            24
+          ],
+          [
+            "glam",
+            19
+          ],
+          [
+            "modern farm_house",
+            15
+          ],
+          [
+            "dining chair",
+            15
+          ],
+          [
+            "classic",
+            10
+          ],
+          [
+            "executive",
+            10
+          ],
+          [
+            "traditional",
+            9
+          ],
+          [
+            "firm",
+            9
+          ],
+          [
+            "bold eclectic",
+            7
+          ],
+          [
+            "medium chair",
+            5
+          ],
+          [
+            "adjustable, swiveling",
+            5
+          ],
+          [
+            "swivel glider",
+            5
+          ],
+          [
+            "famous",
+            5
+          ],
+          [
+            "organic modern",
+            5
+          ],
+          [
+            "industrial",
+            5
+          ],
+          [
+            "grey",
+            5
+          ]
+        ],
+        "fabric_type": [
+          [
+            "fabric",
+            32
+          ],
+          [
+            "95% polyester, 5% nylon",
+            24
+          ],
+          [
+            "100% polyester",
+            23
+          ],
+          [
+            "leather",
+            10
+          ],
+          [
+            "100% polyurethane",
+            7
+          ],
+          [
+            "100% cow hide",
+            6
+          ],
+          [
+            "100% polypropylene",
+            6
+          ],
+          [
+            "polyester",
+            6
+          ],
+          [
+            "steamboat charcoal",
+            6
+          ],
+          [
+            "badlands saddle",
+            5
+          ],
+          [
+            "steamboat driftwood",
+            5
+          ],
+          [
+            "fabric, leather, metal",
+            4
+          ],
+          [
+            "zenith 900",
+            3
+          ],
+          [
+            "100%pu",
+            3
+          ],
+          [
+            "cloth",
+            3
+          ],
+          [
+            "felt",
+            2
+          ],
+          [
+            "60% polyester, 20%linen, 20% rayon",
+            2
+          ],
+          [
+            "hunger green velvet",
+            2
+          ],
+          [
+            "ink navy velvet",
+            2
+          ],
+          [
+            "trixie linen",
+            2
+          ]
+        ],
+        "finish_type": [
+          [
+            "espresso",
+            15
+          ],
+          [
+            "black",
+            8
+          ],
+          [
+            "blue",
+            3
+          ],
+          [
+            "brown",
+            2
+          ],
+          [
+            "oak",
+            2
+          ],
+          [
+            "beige",
+            1
+          ],
+          [
+            "walnut",
+            1
+          ]
+        ],
+        "item_shape": [
+          [
+            "square",
+            26
+          ],
+          [
+            "chair",
+            13
+          ],
+          [
+            "l-shaped",
+            10
+          ],
+          [
+            "wishbone",
+            5
+          ],
+          [
+            "u-shaped",
+            4
+          ],
+          [
+            "rectangular",
+            3
+          ],
+          [
+            "s-shape",
+            3
+          ],
+          [
+            "office chair",
+            2
+          ],
+          [
+            "others",
+            2
+          ],
+          [
+            "info not available",
+            1
+          ],
+          [
+            "not applicable",
+            1
+          ],
+          [
+            "27.36*23.5*36.41-40.15",
+            1
+          ],
+          [
+            "round",
+            1
+          ],
+          [
+            "hexagon",
+            1
+          ]
+        ],
+        "color_standardized": [
+          [
+            "blue",
+            176
+          ],
+          [
+            "brown",
+            153
+          ],
+          [
+            "black",
+            153
+          ],
+          [
+            "beige",
+            142
+          ],
+          [
+            "gray",
+            138
+          ],
+          [
+            "ivory",
+            45
+          ],
+          [
+            "green",
+            35
+          ],
+          [
+            "red",
+            32
+          ],
+          [
+            "white",
+            32
+          ],
+          [
+            "grey",
+            24
+          ],
+          [
+            "silver",
+            20
+          ],
+          [
+            "yellow",
+            15
+          ],
+          [
+            "multi",
+            5
+          ],
+          [
+            "pink",
+            4
+          ],
+          [
+            "purple",
+            4
+          ],
+          [
+            "orange",
+            3
+          ],
+          [
+            "kiwi",
+            1
+          ],
+          [
+            "salsa",
+            1
+          ]
+        ]
+      },
+      "checks": {
+        "english_fill": false,
+        "families": true,
+        "size": true
+      }
+    },
+    {
+      "product_type": "SOFA",
+      "listings": 1199,
+      "products": 1121,
+      "with_main_image": 1120,
+      "with_english_title": 937,
+      "india_share": 0.053,
+      "english_fill": {
+        "color": 0.783,
+        "material": 0.645,
+        "pattern": 0.062,
+        "style": 0.492,
+        "fabric_type": 0.201,
+        "finish_type": 0.0,
+        "item_shape": 0.051
+      },
+      "families": 11,
+      "top_family_share": 0.322,
+      "title_tokens_p50": 22.0,
+      "title_tokens_p95": 32.0,
+      "titles_over_limit": 0.0,
+      "token_counts_exact": true,
+      "top_values": {
+        "color": [
+          [
+            "grey",
+            61
+          ],
+          [
+            "charcoal",
+            54
+          ],
+          [
+            "light grey",
+            36
+          ],
+          [
+            "dark grey",
+            30
+          ],
+          [
+            "beige",
+            30
+          ],
+          [
+            "navy",
+            27
+          ],
+          [
+            "linen",
+            27
+          ],
+          [
+            "blue",
+            23
+          ],
+          [
+            "stone",
+            22
+          ],
+          [
+            "sand",
+            20
+          ],
+          [
+            "cream",
+            20
+          ],
+          [
+            "hunter green",
+            19
+          ],
+          [
+            "grey linen",
+            18
+          ],
+          [
+            "brown",
+            17
+          ],
+          [
+            "pewter",
+            17
+          ],
+          [
+            "black",
+            17
+          ],
+          [
+            "cognac",
+            16
+          ],
+          [
+            "saddle",
+            15
+          ],
+          [
+            "dove",
+            14
+          ],
+          [
+            "denim",
+            12
+          ]
+        ],
+        "material": [
+          [
+            "wood",
+            146
+          ],
+          [
+            "leather",
+            104
+          ],
+          [
+            "polyester",
+            98
+          ],
+          [
+            "stone",
+            93
+          ],
+          [
+            "fabric",
+            37
+          ],
+          [
+            "metal",
+            28
+          ],
+          [
+            "linen",
+            28
+          ],
+          [
+            "velvet",
+            25
+          ],
+          [
+            "velvet, hardwood frame, metal legs",
+            21
+          ],
+          [
+            "solid wood frame; velvet upholstery; metal",
+            18
+          ],
+          [
+            "hardwood",
+            16
+          ],
+          [
+            "polyester fabric, sturdy hardwood frame and solid beech wood legs",
+            16
+          ],
+          [
+            "nylon",
+            12
+          ],
+          [
+            "aluminum",
+            11
+          ],
+          [
+            "leatherette",
+            10
+          ],
+          [
+            "pewter",
+            8
+          ],
+          [
+            "cotton",
+            5
+          ],
+          [
+            "hardwoods/polyester/nylon fabric",
+            3
+          ],
+          [
+            "artificial leather",
+            3
+          ],
+          [
+            "solid hardwood/laminate wood frame/polyester/nylon performance fabric",
+            2
+          ]
+        ],
+        "pattern": [
+          [
+            "seat",
+            32
+          ],
+          [
+            "plain-coloured",
+            15
+          ],
+          [
+            "solid",
+            13
+          ],
+          [
+            "single",
+            5
+          ],
+          [
+            "3 seater sofa",
+            2
+          ],
+          [
+            "chessboard pattern",
+            1
+          ],
+          [
+            "striped",
+            1
+          ]
+        ],
+        "style": [
+          [
+            "transitional",
+            169
+          ],
+          [
+            "industrial",
+            98
+          ],
+          [
+            "mid-century modern",
+            65
+          ],
+          [
+            "modern",
+            62
+          ],
+          [
+            "contemporary",
+            39
+          ],
+          [
+            "sofa",
+            18
+          ],
+          [
+            "rustic",
+            12
+          ],
+          [
+            "loveseat",
+            9
+          ],
+          [
+            "brass",
+            8
+          ],
+          [
+            "modern style",
+            4
+          ],
+          [
+            "3-seater sofa",
+            4
+          ],
+          [
+            "glam",
+            3
+          ],
+          [
+            "benavento",
+            3
+          ],
+          [
+            "linoso",
+            3
+          ],
+          [
+            "anthem",
+            3
+          ],
+          [
+            "classic",
+            3
+          ],
+          [
+            "baldwin",
+            2
+          ],
+          [
+            "jupiter",
+            2
+          ],
+          [
+            "trixie performance",
+            2
+          ],
+          [
+            "traditional",
+            2
+          ]
+        ],
+        "fabric_type": [
+          [
+            "95% polyester, 5% nylon",
+            27
+          ],
+          [
+            "fabric",
+            23
+          ],
+          [
+            "polyester",
+            22
+          ],
+          [
+            "polyster",
+            9
+          ],
+          [
+            "leather",
+            8
+          ],
+          [
+            "anthem sandstone",
+            8
+          ],
+          [
+            "anthem charcoal",
+            7
+          ],
+          [
+            "trixie linen",
+            7
+          ],
+          [
+            "100% polypropylene",
+            6
+          ],
+          [
+            "steamboat charcoal",
+            6
+          ],
+          [
+            "performance fabric",
+            5
+          ],
+          [
+            "badlands saddle",
+            4
+          ],
+          [
+            "rio silver",
+            4
+          ],
+          [
+            "tibby pewter",
+            4
+          ],
+          [
+            "velvet",
+            4
+          ],
+          [
+            "anthem latte",
+            4
+          ],
+          [
+            "rio acorn",
+            4
+          ],
+          [
+            "100% cow hide",
+            4
+          ],
+          [
+            "slipcover spa",
+            4
+          ],
+          [
+            "tibby linen",
+            4
+          ]
+        ],
+        "finish_type": [],
+        "item_shape": [
+          [
+            "rectangular",
+            27
+          ],
+          [
+            "l-shape",
+            12
+          ],
+          [
+            "u-shape",
+            10
+          ],
+          [
+            "round",
+            6
+          ],
+          [
+            "square",
+            2
+          ]
+        ],
+        "color_standardized": [
+          [
+            "blue",
+            101
+          ],
+          [
+            "beige",
+            97
+          ],
+          [
+            "gray",
+            87
+          ],
+          [
+            "black",
+            72
+          ],
+          [
+            "brown",
+            66
+          ],
+          [
+            "grey",
+            57
+          ],
+          [
+            "ivory",
+            40
+          ],
+          [
+            "green",
+            33
+          ],
+          [
+            "silver",
+            25
+          ],
+          [
+            "white",
+            20
+          ],
+          [
+            "purple",
+            11
+          ],
+          [
+            "yellow",
+            5
+          ],
+          [
+            "red",
+            4
+          ],
+          [
+            "multi",
+            2
+          ],
+          [
+            "orange",
+            2
+          ]
+        ]
+      },
+      "checks": {
+        "english_fill": false,
+        "families": true,
+        "size": true
+      }
+    },
+    {
+      "product_type": "TABLE",
+      "listings": 936,
+      "products": 905,
+      "with_main_image": 905,
+      "with_english_title": 723,
+      "india_share": 0.045,
+      "english_fill": {
+        "color": 0.643,
+        "material": 0.618,
+        "pattern": 0.008,
+        "style": 0.515,
+        "fabric_type": 0.009,
+        "finish_type": 0.064,
+        "item_shape": 0.326
+      },
+      "families": 26,
+      "top_family_share": 0.168,
+      "title_tokens_p50": 21.0,
+      "title_tokens_p95": 35.0,
+      "titles_over_limit": 0.001,
+      "token_counts_exact": true,
+      "top_values": {
+        "color": [
+          [
+            "brown",
+            89
+          ],
+          [
+            "white",
+            40
+          ],
+          [
+            "black",
+            37
+          ],
+          [
+            "grey",
+            30
+          ],
+          [
+            "natural",
+            23
+          ],
+          [
+            "wild oak",
+            19
+          ],
+          [
+            "oak",
+            17
+          ],
+          [
+            "espresso",
+            16
+          ],
+          [
+            "walnut",
+            15
+          ],
+          [
+            "dark espresso",
+            13
+          ],
+          [
+            "core beech",
+            10
+          ],
+          [
+            "pine",
+            9
+          ],
+          [
+            "wenge",
+            8
+          ],
+          [
+            "walnut + metal",
+            8
+          ],
+          [
+            "beige",
+            7
+          ],
+          [
+            "walnut veneer",
+            6
+          ],
+          [
+            "white granite",
+            6
+          ],
+          [
+            "kona",
+            6
+          ],
+          [
+            "dark brown",
+            5
+          ],
+          [
+            "black oak",
+            5
+          ]
+        ],
+        "material": [
+          [
+            "wood",
+            153
+          ],
+          [
+            "metal",
+            63
+          ],
+          [
+            "engineered wood",
+            49
+          ],
+          [
+            "pine",
+            46
+          ],
+          [
+            "stone",
+            36
+          ],
+          [
+            "oak",
+            21
+          ],
+          [
+            "aluminum",
+            16
+          ],
+          [
+            "ceramic",
+            12
+          ],
+          [
+            "glass",
+            11
+          ],
+          [
+            "beech",
+            9
+          ],
+          [
+            "teak",
+            8
+          ],
+          [
+            "hardwood",
+            6
+          ],
+          [
+            "plastic",
+            6
+          ],
+          [
+            "mdf with walnut veneer, powder coated metal",
+            5
+          ],
+          [
+            "medium-density fibreboard",
+            5
+          ],
+          [
+            "mdf",
+            5
+          ],
+          [
+            "wild oak and metal",
+            5
+          ],
+          [
+            "steel",
+            4
+          ],
+          [
+            "wicker",
+            4
+          ],
+          [
+            "solid pine",
+            4
+          ]
+        ],
+        "pattern": [
+          [
+            "modern",
+            2
+          ],
+          [
+            "single",
+            2
+          ],
+          [
+            "bed",
+            2
+          ],
+          [
+            "mexican pine",
+            1
+          ]
+        ],
+        "style": [
+          [
+            "modern",
+            84
+          ],
+          [
+            "coffee table",
+            56
+          ],
+          [
+            "contemporary",
+            39
+          ],
+          [
+            "side table",
+            27
+          ],
+          [
+            "console table",
+            24
+          ],
+          [
+            "nightstand",
+            20
+          ],
+          [
+            "transitional",
+            18
+          ],
+          [
+            "traditional",
+            13
+          ],
+          [
+            "0",
+            11
+          ],
+          [
+            "end table",
+            11
+          ],
+          [
+            "beside table",
+            10
+          ],
+          [
+            "organic modern",
+            9
+          ],
+          [
+            "industrial",
+            9
+          ],
+          [
+            "damask pattern",
+            4
+          ],
+          [
+            "clover pattern",
+            4
+          ],
+          [
+            "modern farm_house",
+            4
+          ],
+          [
+            "dining table",
+            4
+          ],
+          [
+            "small dining table",
+            4
+          ],
+          [
+            "small side table",
+            4
+          ],
+          [
+            "country rustic",
+            4
+          ]
+        ],
+        "fabric_type": [
+          [
+            "plastic",
+            7
+          ],
+          [
+            "leather",
+            1
+          ]
+        ],
+        "finish_type": [
+          [
+            "walnut veneer",
+            18
+          ],
+          [
+            "oak",
+            10
+          ],
+          [
+            "espresso",
+            4
+          ],
+          [
+            "black",
+            3
+          ],
+          [
+            "wood",
+            3
+          ],
+          [
+            "walnut veneer, white lacquer",
+            2
+          ],
+          [
+            "distressed",
+            2
+          ],
+          [
+            "lacquered",
+            2
+          ],
+          [
+            "high-gloss",
+            2
+          ],
+          [
+            "walnut",
+            2
+          ],
+          [
+            "coffee",
+            1
+          ],
+          [
+            "brown",
+            1
+          ],
+          [
+            "white",
+            1
+          ],
+          [
+            "light oak",
+            1
+          ],
+          [
+            "gold",
+            1
+          ],
+          [
+            "marble, stainless steel",
+            1
+          ],
+          [
+            "walnut veneer, grey lacquer",
+            1
+          ],
+          [
+            "wax",
+            1
+          ],
+          [
+            "pre-laminated board top with black powder coated legs",
+            1
+          ],
+          [
+            "cherry",
+            1
+          ]
+        ],
+        "item_shape": [
+          [
+            "rectangle",
+            88
+          ],
+          [
+            "round",
+            82
+          ],
+          [
+            "square",
+            43
+          ],
+          [
+            "rectanglular",
+            31
+          ],
+          [
+            "rectangular",
+            30
+          ],
+          [
+            "oval",
+            6
+          ],
+          [
+            "semicircle",
+            4
+          ],
+          [
+            "triangle",
+            3
+          ],
+          [
+            "c-shaped",
+            3
+          ],
+          [
+            "hexagon",
+            3
+          ],
+          [
+            "sector",
+            1
+          ],
+          [
+            "l-shaped",
+            1
+          ]
+        ],
+        "color_standardized": [
+          [
+            "brown",
+            199
+          ],
+          [
+            "black",
+            46
+          ],
+          [
+            "gray",
+            25
+          ],
+          [
+            "beige",
+            25
+          ],
+          [
+            "white",
+            17
+          ],
+          [
+            "blue",
+            10
+          ],
+          [
+            "grey",
+            7
+          ],
+          [
+            "gold",
+            5
+          ],
+          [
+            "ivory",
+            3
+          ],
+          [
+            "clear",
+            3
+          ],
+          [
+            "silver",
+            3
+          ],
+          [
+            "green",
+            2
+          ],
+          [
+            "red",
+            1
+          ],
+          [
+            "pink",
+            1
+          ],
+          [
+            "white ",
+            1
+          ],
+          [
+            "off-white",
+            1
+          ],
+          [
+            "gray ",
+            1
+          ],
+          [
+            "multi",
+            1
+          ]
+        ]
+      },
+      "checks": {
+        "english_fill": false,
+        "families": true,
+        "size": true
+      }
+    },
+    {
+      "product_type": "RUG",
+      "listings": 817,
+      "products": 763,
+      "with_main_image": 763,
+      "with_english_title": 763,
+      "india_share": 0.0,
+      "english_fill": {
+        "color": 0.81,
+        "material": 0.879,
+        "pattern": 0.52,
+        "style": 0.82,
+        "fabric_type": 0.144,
+        "finish_type": 0.0,
+        "item_shape": 0.847
+      },
+      "families": 6,
+      "top_family_share": 0.412,
+      "title_tokens_p50": 24.0,
+      "title_tokens_p95": 33.0,
+      "titles_over_limit": 0.0,
+      "token_counts_exact": true,
+      "top_values": {
+        "color": [
+          [
+            "grey",
+            57
+          ],
+          [
+            "beige",
+            40
+          ],
+          [
+            "ivory",
+            39
+          ],
+          [
+            "blue",
+            26
+          ],
+          [
+            "navy",
+            16
+          ],
+          [
+            "taupe",
+            16
+          ],
+          [
+            "charcoal",
+            14
+          ],
+          [
+            "ivory/blue",
+            14
+          ],
+          [
+            "cream",
+            10
+          ],
+          [
+            "ivory/grey",
+            10
+          ],
+          [
+            "brick",
+            9
+          ],
+          [
+            "natural",
+            9
+          ],
+          [
+            "silver",
+            9
+          ],
+          [
+            "ivory/green",
+            9
+          ],
+          [
+            "light blue",
+            8
+          ],
+          [
+            "teal",
+            7
+          ],
+          [
+            "blue, ivory",
+            7
+          ],
+          [
+            "teal/sun",
+            7
+          ],
+          [
+            "ivory/pink",
+            7
+          ],
+          [
+            "rust",
+            6
+          ]
+        ],
+        "material": [
+          [
+            "wool",
+            212
+          ],
+          [
+            "stone",
+            127
+          ],
+          [
+            "polypropylene",
+            108
+          ],
+          [
+            "polyester",
+            43
+          ],
+          [
+            "jute",
+            40
+          ],
+          [
+            "cotton",
+            39
+          ],
+          [
+            "silver",
+            21
+          ],
+          [
+            "sisal",
+            11
+          ],
+          [
+            "80% wool 20% cotton",
+            7
+          ],
+          [
+            "nylon",
+            7
+          ],
+          [
+            "steel",
+            6
+          ],
+          [
+            "cotton blend",
+            5
+          ],
+          [
+            "polyethylene",
+            4
+          ],
+          [
+            "70% jute, 30% cotton",
+            4
+          ],
+          [
+            "pile: 100% polypropylene, backing: 100% jute",
+            3
+          ],
+          [
+            "pile: 100% wool, backing: 100% canvas",
+            3
+          ],
+          [
+            "synthetic",
+            3
+          ],
+          [
+            "wool pile",
+            3
+          ],
+          [
+            "80% wool, 20% cotton",
+            3
+          ],
+          [
+            "76% wool, 24% rayon",
+            2
+          ]
+        ],
+        "pattern": [
+          [
+            "geometric",
+            162
+          ],
+          [
+            "floral",
+            62
+          ],
+          [
+            "striped",
+            27
+          ],
+          [
+            "medallion",
+            25
+          ],
+          [
+            "moroccan",
+            23
+          ],
+          [
+            "solid",
+            21
+          ],
+          [
+            "ikat",
+            15
+          ],
+          [
+            "plaid",
+            15
+          ],
+          [
+            "trellis",
+            9
+          ],
+          [
+            "0",
+            6
+          ],
+          [
+            "paisley",
+            4
+          ],
+          [
+            "textured",
+            3
+          ],
+          [
+            "contemporary",
+            3
+          ],
+          [
+            "oriental",
+            2
+          ],
+          [
+            "ombre",
+            2
+          ],
+          [
+            "leaf",
+            2
+          ],
+          [
+            "checkered",
+            2
+          ],
+          [
+            "traditional medallion",
+            2
+          ],
+          [
+            "transitional",
+            1
+          ],
+          [
+            "bohemian",
+            1
+          ]
+        ],
+        "style": [
+          [
+            "modern",
+            142
+          ],
+          [
+            "contemporary",
+            122
+          ],
+          [
+            "transitional",
+            99
+          ],
+          [
+            "traditional",
+            41
+          ],
+          [
+            "bohemian",
+            28
+          ],
+          [
+            "farmhouse",
+            27
+          ],
+          [
+            "area rug",
+            26
+          ],
+          [
+            "0",
+            25
+          ],
+          [
+            "standard pile solid",
+            12
+          ],
+          [
+            "moroccan trellis pattern",
+            12
+          ],
+          [
+            "high pile solid",
+            11
+          ],
+          [
+            "gray",
+            7
+          ],
+          [
+            "persian",
+            7
+          ],
+          [
+            "navy",
+            7
+          ],
+          [
+            "grey/ivory",
+            6
+          ],
+          [
+            "rustic",
+            4
+          ],
+          [
+            "oatmeal",
+            3
+          ],
+          [
+            "silver birch",
+            3
+          ],
+          [
+            "blue/ivory",
+            3
+          ],
+          [
+            "vapor",
+            3
+          ]
+        ],
+        "fabric_type": [
+          [
+            "polypropylene",
+            32
+          ],
+          [
+            "100% polypropylene",
+            27
+          ],
+          [
+            "49% polyester, 29% polypropylene, 16% jute, 6% cotton",
+            19
+          ],
+          [
+            "80% wool, 20% cotton",
+            19
+          ],
+          [
+            "polypropylene blend",
+            6
+          ],
+          [
+            "jute",
+            2
+          ],
+          [
+            "80% polyester, 20% polypropylene",
+            2
+          ],
+          [
+            "100% polyester",
+            2
+          ],
+          [
+            "polypropylene frisee",
+            1
+          ]
+        ],
+        "finish_type": [],
+        "item_shape": [
+          [
+            "rectangular",
+            534
+          ],
+          [
+            "runner",
+            95
+          ],
+          [
+            "round",
+            13
+          ],
+          [
+            "oval",
+            1
+          ],
+          [
+            "rectangle",
+            1
+          ],
+          [
+            "square",
+            1
+          ],
+          [
+            "novelty",
+            1
+          ]
+        ],
+        "color_standardized": [
+          [
+            "blue",
+            113
+          ],
+          [
+            "grey",
+            93
+          ],
+          [
+            "beige",
+            88
+          ],
+          [
+            "ivory",
+            59
+          ],
+          [
+            "multi",
+            50
+          ],
+          [
+            "red",
+            32
+          ],
+          [
+            "brown",
+            21
+          ],
+          [
+            "green",
+            21
+          ],
+          [
+            "pink",
+            12
+          ],
+          [
+            "white",
+            11
+          ],
+          [
+            "black",
+            7
+          ],
+          [
+            "silver",
+            5
+          ],
+          [
+            "yellow",
+            3
+          ],
+          [
+            "orange",
+            2
+          ],
+          [
+            "gold",
+            1
+          ]
+        ]
+      },
+      "checks": {
+        "english_fill": true,
+        "families": true,
+        "size": true
+      }
+    },
+    {
+      "product_type": "LAMP",
+      "listings": 544,
+      "products": 544,
+      "with_main_image": 544,
+      "with_english_title": 457,
+      "india_share": 0.066,
+      "english_fill": {
+        "color": 0.818,
+        "material": 0.509,
+        "pattern": 0.0,
+        "style": 0.46,
+        "fabric_type": 0.0,
+        "finish_type": 0.489,
+        "item_shape": 0.358
+      },
+      "families": 10,
+      "top_family_share": 0.274,
+      "title_tokens_p50": 28.0,
+      "title_tokens_p95": 37.0,
+      "titles_over_limit": 0.0,
+      "token_counts_exact": true,
+      "top_values": {
+        "color": [
+          [
+            "black",
+            41
+          ],
+          [
+            "white",
+            35
+          ],
+          [
+            "dark bronze",
+            33
+          ],
+          [
+            "brushed nickel",
+            29
+          ],
+          [
+            "antique brass",
+            22
+          ],
+          [
+            "grey",
+            17
+          ],
+          [
+            "brass",
+            17
+          ],
+          [
+            "matte black",
+            11
+          ],
+          [
+            "blue",
+            10
+          ],
+          [
+            "polished nickel",
+            9
+          ],
+          [
+            "beige",
+            9
+          ],
+          [
+            "crystal pink",
+            9
+          ],
+          [
+            "clear",
+            8
+          ],
+          [
+            "silver",
+            6
+          ],
+          [
+            "cannoli cream",
+            6
+          ],
+          [
+            "chrome",
+            6
+          ],
+          [
+            "gold",
+            5
+          ],
+          [
+            "brushed brass",
+            5
+          ],
+          [
+            "matte black and antique brass",
+            5
+          ],
+          [
+            "sea foam green",
+            5
+          ]
+        ],
+        "material": [
+          [
+            "metal",
+            63
+          ],
+          [
+            "ceramic",
+            63
+          ],
+          [
+            "glass",
+            33
+          ],
+          [
+            "linen",
+            14
+          ],
+          [
+            "wood",
+            11
+          ],
+          [
+            "glass/metal+plastic",
+            9
+          ],
+          [
+            "ceramic+fabric",
+            7
+          ],
+          [
+            "fabric",
+            6
+          ],
+          [
+            "resin",
+            6
+          ],
+          [
+            "plastic",
+            6
+          ],
+          [
+            "polyresin+metal+fabric",
+            6
+          ],
+          [
+            "metal+fabric",
+            5
+          ],
+          [
+            "steel",
+            4
+          ],
+          [
+            "ceramic+metal+fabric",
+            4
+          ],
+          [
+            "metal+glass+fabric",
+            4
+          ],
+          [
+            "glass+metal+fabric",
+            3
+          ],
+          [
+            "wood+metal+fabric",
+            3
+          ],
+          [
+            "acrylic",
+            3
+          ],
+          [
+            "metal,wood, fabric",
+            3
+          ],
+          [
+            "crystal+metal+fabric",
+            2
+          ]
+        ],
+        "pattern": [],
+        "style": [
+          [
+            "floor lamp",
+            49
+          ],
+          [
+            "table lamp",
+            40
+          ],
+          [
+            "modern",
+            30
+          ],
+          [
+            "floor",
+            18
+          ],
+          [
+            "table",
+            17
+          ],
+          [
+            "classic",
+            6
+          ],
+          [
+            "rectangle",
+            4
+          ],
+          [
+            "round table",
+            3
+          ],
+          [
+            "cylinder table",
+            3
+          ],
+          [
+            "torchiere",
+            3
+          ],
+          [
+            "classic/modern",
+            3
+          ],
+          [
+            "torchiere with reader",
+            3
+          ],
+          [
+            "uplight",
+            3
+          ],
+          [
+            "desk lamp",
+            3
+          ],
+          [
+            "cylinder",
+            3
+          ],
+          [
+            "24.25\" table lamp",
+            2
+          ],
+          [
+            "stick",
+            2
+          ],
+          [
+            "pineapple",
+            2
+          ],
+          [
+            "transitional",
+            2
+          ],
+          [
+            "task",
+            2
+          ]
+        ],
+        "fabric_type": [],
+        "finish_type": [
+          [
+            "brushed",
+            119
+          ],
+          [
+            "matte",
+            32
+          ],
+          [
+            "antique",
+            20
+          ],
+          [
+            "polished",
+            16
+          ],
+          [
+            "oil rubbed",
+            16
+          ],
+          [
+            "satin",
+            10
+          ],
+          [
+            "black",
+            10
+          ],
+          [
+            "antique brass",
+            9
+          ],
+          [
+            "brass",
+            8
+          ],
+          [
+            "gold",
+            3
+          ],
+          [
+            "steel",
+            2
+          ],
+          [
+            "chrome",
+            2
+          ],
+          [
+            "black/antique brass",
+            2
+          ],
+          [
+            "white",
+            2
+          ],
+          [
+            "marble/brass",
+            2
+          ],
+          [
+            "brass/walnut",
+            1
+          ],
+          [
+            "blue/white",
+            1
+          ],
+          [
+            "silver",
+            1
+          ],
+          [
+            "white/antique brass",
+            1
+          ],
+          [
+            "clear",
+            1
+          ]
+        ],
+        "item_shape": [
+          [
+            "drum",
+            151
+          ],
+          [
+            "table lamp",
+            19
+          ],
+          [
+            "floor lamp",
+            9
+          ],
+          [
+            "bell",
+            6
+          ],
+          [
+            "square",
+            3
+          ],
+          [
+            "rectangle",
+            3
+          ],
+          [
+            "pagoda",
+            2
+          ],
+          [
+            "barrel",
+            1
+          ],
+          [
+            "rectangular",
+            1
+          ]
+        ],
+        "color_standardized": [
+          [
+            "gold",
+            23
+          ],
+          [
+            "black",
+            23
+          ],
+          [
+            "white",
+            20
+          ],
+          [
+            "brown",
+            16
+          ],
+          [
+            "blue",
+            8
+          ],
+          [
+            "grey",
+            8
+          ],
+          [
+            "green",
+            4
+          ],
+          [
+            "silver",
+            4
+          ],
+          [
+            "gray",
+            2
+          ],
+          [
+            "beige",
+            2
+          ],
+          [
+            "ivory",
+            2
+          ],
+          [
+            "multi-colored",
+            1
+          ],
+          [
+            "pewter",
+            1
+          ],
+          [
+            "red",
+            1
+          ]
+        ]
+      },
+      "checks": {
+        "english_fill": false,
+        "families": true,
+        "size": true
+      }
+    },
+    {
+      "product_type": "LIGHT_FIXTURE",
+      "listings": 544,
+      "products": 515,
+      "with_main_image": 515,
+      "with_english_title": 462,
+      "india_share": 0.033,
+      "english_fill": {
+        "color": 0.864,
+        "material": 0.606,
+        "pattern": 0.0,
+        "style": 0.606,
+        "fabric_type": 0.0,
+        "finish_type": 0.503,
+        "item_shape": 0.068
+      },
+      "families": 8,
+      "top_family_share": 0.346,
+      "title_tokens_p50": 32.0,
+      "title_tokens_p95": 43.0,
+      "titles_over_limit": 0.0,
+      "token_counts_exact": true,
+      "top_values": {
+        "color": [
+          [
+            "black",
+            67
+          ],
+          [
+            "brushed nickel",
+            51
+          ],
+          [
+            "oil-rubbed bronze",
+            48
+          ],
+          [
+            "matte black",
+            40
+          ],
+          [
+            "dark bronze",
+            36
+          ],
+          [
+            "bronze",
+            24
+          ],
+          [
+            "chrome",
+            20
+          ],
+          [
+            "white",
+            15
+          ],
+          [
+            "gold",
+            13
+          ],
+          [
+            "antique bronze",
+            12
+          ],
+          [
+            "brass",
+            10
+          ],
+          [
+            "satin brass",
+            7
+          ],
+          [
+            "antique brass",
+            7
+          ],
+          [
+            "cool white",
+            5
+          ],
+          [
+            "brushed steel",
+            5
+          ],
+          [
+            "silver",
+            5
+          ],
+          [
+            "grey",
+            4
+          ],
+          [
+            "daylight",
+            4
+          ],
+          [
+            "aged brass",
+            4
+          ],
+          [
+            "natural",
+            3
+          ]
+        ],
+        "material": [
+          [
+            "metal",
+            128
+          ],
+          [
+            "glass",
+            94
+          ],
+          [
+            "metal+glass",
+            20
+          ],
+          [
+            "alloy steel",
+            12
+          ],
+          [
+            "brass",
+            11
+          ],
+          [
+            "aluminum",
+            7
+          ],
+          [
+            "wood",
+            7
+          ],
+          [
+            "stone",
+            6
+          ],
+          [
+            "acrylonitrile butadiene styrene",
+            4
+          ],
+          [
+            "nickel",
+            3
+          ],
+          [
+            "bronze",
+            3
+          ],
+          [
+            "glass+metal",
+            3
+          ],
+          [
+            "material: other",
+            2
+          ],
+          [
+            "alabaster glass",
+            2
+          ],
+          [
+            "steel",
+            2
+          ],
+          [
+            "concrete resin+metal",
+            2
+          ],
+          [
+            "frosted glass",
+            2
+          ],
+          [
+            "fabric",
+            1
+          ],
+          [
+            "plastic",
+            1
+          ],
+          [
+            "glass/metal+plastic",
+            1
+          ]
+        ],
+        "pattern": [],
+        "style": [
+          [
+            "modern",
+            42
+          ],
+          [
+            "0",
+            35
+          ],
+          [
+            "classic",
+            29
+          ],
+          [
+            "mid-century modern",
+            27
+          ],
+          [
+            "pendant",
+            27
+          ],
+          [
+            "wall sconce",
+            16
+          ],
+          [
+            "sconce",
+            13
+          ],
+          [
+            "vintage",
+            7
+          ],
+          [
+            "contemporary",
+            6
+          ],
+          [
+            "antique",
+            6
+          ],
+          [
+            "traditional",
+            5
+          ],
+          [
+            "flush mount",
+            5
+          ],
+          [
+            "rustic",
+            5
+          ],
+          [
+            "vanity light",
+            4
+          ],
+          [
+            "pendant canopy",
+            4
+          ],
+          [
+            "semi-flush mount",
+            3
+          ],
+          [
+            "1-light",
+            3
+          ],
+          [
+            "hardwire",
+            3
+          ],
+          [
+            "2-light",
+            3
+          ],
+          [
+            "chandelier",
+            3
+          ]
+        ],
+        "fabric_type": [],
+        "finish_type": [
+          [
+            "matte",
+            74
+          ],
+          [
+            "brushed",
+            63
+          ],
+          [
+            "oil rubbed",
+            46
+          ],
+          [
+            "antique",
+            20
+          ],
+          [
+            "black",
+            13
+          ],
+          [
+            "satin",
+            11
+          ],
+          [
+            "chrome",
+            7
+          ],
+          [
+            "matte black",
+            6
+          ],
+          [
+            "antique brass",
+            3
+          ],
+          [
+            "matte black/chrome",
+            2
+          ],
+          [
+            "gold",
+            2
+          ],
+          [
+            "polished",
+            2
+          ],
+          [
+            "crystal",
+            2
+          ],
+          [
+            "concrete",
+            2
+          ],
+          [
+            "painted",
+            1
+          ],
+          [
+            "white",
+            1
+          ],
+          [
+            "rose gold",
+            1
+          ],
+          [
+            "faux wood/brushed nickel",
+            1
+          ],
+          [
+            "black/brushed nickel",
+            1
+          ],
+          [
+            "oil-rubbed",
+            1
+          ]
+        ],
+        "item_shape": [
+          [
+            "pendant",
+            11
+          ],
+          [
+            "taper",
+            6
+          ],
+          [
+            "rectangle",
+            6
+          ],
+          [
+            "drum",
+            4
+          ],
+          [
+            "wall sconce",
+            4
+          ],
+          [
+            "rectangular",
+            3
+          ],
+          [
+            "square",
+            1
+          ]
+        ],
+        "color_standardized": [
+          [
+            "black",
+            42
+          ],
+          [
+            "grey",
+            11
+          ],
+          [
+            "gold",
+            9
+          ],
+          [
+            "brown",
+            7
+          ],
+          [
+            "silver",
+            4
+          ],
+          [
+            "white",
+            2
+          ],
+          [
+            "multi-colored",
+            1
+          ],
+          [
+            "bronze",
+            1
+          ],
+          [
+            "gray",
+            1
+          ]
+        ]
+      },
+      "checks": {
+        "english_fill": true,
+        "families": true,
+        "size": true
+      }
+    }
+  ],
+  "products_option_a_capped": 8267,
+  "failing_types": [
+    "SHOES",
+    "CHAIR",
+    "SOFA",
+    "TABLE",
+    "LAMP"
+  ],
+  "certificate_reach": {
+    "calibration_products": 2067,
+    "assumed_accept_rate": 0.7,
+    "accepted_per_field": 1447,
+    "n_fields": 6,
+    "needed": {
+      "2%": {
+        "needed": 322,
+        "reachable": true
+      },
+      "3%": {
+        "needed": 739,
+        "reachable": true
+      },
+      "4%": {
+        "needed": 2853,
+        "reachable": false
+      }
+    }
+  },
+  "token_counts_exact": true,
+  "pilot_items": 20
+}

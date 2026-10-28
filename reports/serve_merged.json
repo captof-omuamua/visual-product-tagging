@@ -1,0 +1,83 @@
+{
+  "model": "outputs/smoke-merged",
+  "adapter": null,
+  "checks": {
+    "server_ready": true,
+    "base_listed": true,
+    "burst_all_ok": true,
+    "healthy_after_load": true,
+    "grammar_enforced": true
+  },
+  "ok": true,
+  "startup": "ready",
+  "startup_s": 60.0,
+  "vllm_version": "0.32.0",
+  "models": [
+    "outputs/smoke-merged"
+  ],
+  "burst": {
+    "concurrency": 200,
+    "requests": 200,
+    "ok": 200,
+    "failed": 0,
+    "errors": {},
+    "wall_s": 12.659,
+    "latency_s": {
+      "p50": 10.694,
+      "p95": 12.522,
+      "p99": 12.538,
+      "max": 12.55,
+      "mean": 10.053
+    },
+    "requests_per_s": 15.799,
+    "completion_tokens_per_s": 205.4
+  },
+  "base_quality": {
+    "n": 48,
+    "exact_format_rate": 1.0,
+    "json_rate": 1.0,
+    "color_accuracy": 1.0,
+    "shape_accuracy": 1.0
+  },
+  "examples": [
+    {
+      "target": "{\"color\": \"orange\", \"shape\": \"diamond\"}",
+      "base": "{\"color\": \"orange\", \"shape\": \"diamond\"}",
+      "adapter": null
+    },
+    {
+      "target": "{\"color\": \"yellow\", \"shape\": \"triangle\"}",
+      "base": "{\"color\": \"yellow\", \"shape\": \"triangle\"}",
+      "adapter": null
+    },
+    {
+      "target": "{\"color\": \"red\", \"shape\": \"circle\"}",
+      "base": "{\"color\": \"red\", \"shape\": \"circle\"}",
+      "adapter": null
+    },
+    {
+      "target": "{\"color\": \"green\", \"shape\": \"circle\"}",
+      "base": "{\"color\": \"green\", \"shape\": \"circle\"}",
+      "adapter": null
+    }
+  ],
+  "grammar": {
+    "requests": 48,
+    "forced_enforced_rate": 1.0,
+    "enum_valid_rate": 1.0,
+    "logprobs_returned": true,
+    "structure_logprob": {
+      "n": 528,
+      "median": 0.0,
+      "min": -0.0001
+    },
+    "value_logprob": {
+      "n": 96,
+      "median": -0.0,
+      "min": -0.0001
+    },
+    "structure_tokens_near_zero": true,
+    "ok": true
+  },
+  "merged_vs_runtime_match": 1.0
+}

@@ -1,0 +1,91 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "adapter": "smoke-lora",
+  "checks": {
+    "server_ready": true,
+    "base_listed": true,
+    "adapter_listed": true,
+    "burst_all_ok": true,
+    "sustained_all_ok": true,
+    "healthy_after_load": true
+  },
+  "ok": true,
+  "startup": "ready",
+  "startup_s": 85.0,
+  "vllm_version": "0.32.0",
+  "models": [
+    "Qwen/Qwen3.5-4B",
+    "smoke-lora"
+  ],
+  "burst": {
+    "concurrency": 200,
+    "requests": 200,
+    "ok": 200,
+    "failed": 0,
+    "errors": {},
+    "wall_s": 15.503,
+    "latency_s": {
+      "p50": 12.384,
+      "p95": 15.141,
+      "p99": 15.376,
+      "max": 15.399,
+      "mean": 12.146
+    },
+    "requests_per_s": 12.901,
+    "completion_tokens_per_s": 455.5
+  },
+  "sustained": {
+    "concurrency": 50,
+    "requests": 200,
+    "ok": 200,
+    "failed": 0,
+    "errors": {},
+    "wall_s": 14.037,
+    "latency_s": {
+      "p50": 2.259,
+      "p95": 8.468,
+      "p99": 8.892,
+      "max": 8.894,
+      "mean": 3.442
+    },
+    "requests_per_s": 14.248,
+    "completion_tokens_per_s": 185.2
+  },
+  "base_quality": {
+    "n": 48,
+    "exact_format_rate": 0.0,
+    "json_rate": 1.0,
+    "color_accuracy": 1.0,
+    "shape_accuracy": 0.938
+  },
+  "adapter_quality": {
+    "n": 48,
+    "exact_format_rate": 1.0,
+    "json_rate": 1.0,
+    "color_accuracy": 1.0,
+    "shape_accuracy": 1.0
+  },
+  "lora_effect_visible": true,
+  "examples": [
+    {
+      "target": "{\"color\": \"orange\", \"shape\": \"diamond\"}",
+      "base": "```json\n[\n    {\n        \"shape\": \"diamond\",\n        \"color\": \"orange\"\n    }\n]\n```",
+      "adapter": "{\"color\": \"orange\", \"shape\": \"diamond\"}"
+    },
+    {
+      "target": "{\"color\": \"yellow\", \"shape\": \"triangle\"}",
+      "base": "```json\n[\n  {\n    \"shape\": \"triangle\",\n    \"color\": \"yellow\"\n  }\n]\n```",
+      "adapter": "{\"color\": \"yellow\", \"shape\": \"triangle\"}"
+    },
+    {
+      "target": "{\"color\": \"red\", \"shape\": \"circle\"}",
+      "base": "```json\n[\n  {\n    \"object\": \"circle\",\n    \"color\": \"red\"\n  }\n]\n```",
+      "adapter": "{\"color\": \"red\", \"shape\": \"circle\"}"
+    },
+    {
+      "target": "{\"color\": \"green\", \"shape\": \"circle\"}",
+      "base": "```json\n[\n  {\n    \"shape\": \"circle\",\n    \"color\": \"green\"\n  }\n]\n```",
+      "adapter": "{\"color\": \"green\", \"shape\": \"circle\"}"
+    }
+  ]
+}

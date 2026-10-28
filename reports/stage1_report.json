@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "warnings": [
+    "Qwen/Qwen3.5-27B-GPTQ-Int4 failed its check; the other one carries on.",
+    "cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit used the slow Triton attention path.",
+    "ABO types failing a check: SHOES, CHAIR, SOFA, TABLE, LAMP. Choose swaps from options B or C before stage 2.",
+    "The Gemini mini-pilot did not run (set GEMINI_API_KEY)."
+  ]
+}

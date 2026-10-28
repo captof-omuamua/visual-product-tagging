@@ -1,0 +1,47 @@
+{
+  "model": "cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit",
+  "ok": true,
+  "startup": "ready",
+  "startup_s": 135.0,
+  "load": {
+    "requests": 50,
+    "ok": 50,
+    "failed": 0,
+    "errors": {},
+    "wall_s": 24.591,
+    "latency_s": {
+      "p50": 3.819,
+      "p95": 4.555,
+      "p99": 4.963,
+      "max": 5.351,
+      "mean": 3.844
+    },
+    "requests_per_s": 2.033,
+    "completion_tokens_per_s": 26.4
+  },
+  "synthetic_accuracy": 1.0,
+  "overnight_hours_for_8600_items": 1.2,
+  "grammar": {
+    "requests": 10,
+    "forced_enforced_rate": 1.0,
+    "enum_valid_rate": 1.0,
+    "logprobs_returned": true,
+    "structure_logprob": {
+      "n": 110,
+      "median": -0.0,
+      "min": -0.0232
+    },
+    "value_logprob": {
+      "n": 20,
+      "median": -0.0,
+      "min": -0.001
+    },
+    "structure_tokens_near_zero": true,
+    "ok": true
+  },
+  "log_flags": {
+    "triton_attention_fallback": true,
+    "out_of_memory": false,
+    "mamba_cache_error": true
+  }
+}

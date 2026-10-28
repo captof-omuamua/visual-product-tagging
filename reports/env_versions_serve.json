@@ -1,0 +1,19 @@
+{
+  "vllm": "0.32.0",
+  "torch": "2.13.0+cu130",
+  "torch_cuda": "13.0",
+  "cuda_available": true,
+  "arch_list": [
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "device": "NVIDIA GeForce RTX 5090 Laptop GPU",
+  "capability": [
+    12,
+    0
+  ]
+}

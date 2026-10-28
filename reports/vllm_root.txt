@@ -1,0 +1,52 @@
+===== reports/vllm_merged.log =====
+    self.build()
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/flashinfer/jit/core.py", line 562, in build
+    self.write_ninja()
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/flashinfer/jit/core.py", line 490, in write_ninja
+    content = generate_ninja_build_for_op(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/flashinfer/jit/cpp_ext.py", line 250, in generate_ninja_build_for_op
+    cuda_home = get_cuda_path()
+                ^^^^^^^^^^^^^^^
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/flashinfer/jit/cpp_ext.py", line 61, in get_cuda_path
+    raise RuntimeError(
+RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+===== reports/vllm_runtime.log =====
+    self.build()
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/flashinfer/jit/core.py", line 562, in build
+    self.write_ninja()
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/flashinfer/jit/core.py", line 490, in write_ninja
+    content = generate_ninja_build_for_op(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/flashinfer/jit/cpp_ext.py", line 250, in generate_ninja_build_for_op
+    cuda_home = get_cuda_path()
+                ^^^^^^^^^^^^^^^
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/flashinfer/jit/cpp_ext.py", line 61, in get_cuda_path
+    raise RuntimeError(
+RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+===== reports/vllm_tier2_cyankiwi_gemma-4-26B-A4B-it-AWQ-4bit.log =====
+    self.build()
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/flashinfer/jit/core.py", line 562, in build
+    self.write_ninja()
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/flashinfer/jit/core.py", line 490, in write_ninja
+    content = generate_ninja_build_for_op(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/flashinfer/jit/cpp_ext.py", line 250, in generate_ninja_build_for_op
+    cuda_home = get_cuda_path()
+                ^^^^^^^^^^^^^^^
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/flashinfer/jit/cpp_ext.py", line 61, in get_cuda_path
+    raise RuntimeError(
+RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+===== reports/vllm_tier2_Qwen_Qwen3.5-27B-GPTQ-Int4.log =====
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/vllm/model_executor/layers/linear.py", line 719, in __init__
+    super().__init__(
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/vllm/model_executor/layers/linear.py", line 519, in __init__
+    self.quant_method.create_weights(
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/vllm/model_executor/layers/linear.py", line 193, in create_weights
+    data=torch.empty(
+         ^^^^^^^^^^^^
+  File "/home/garud/catalog-vlm-cascade/.venv-serve/lib/python3.12/site-packages/torch/utils/_device.py", line 122, in __torch_function__
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 23.42 GiB of which 148.94 MiB is free. Including non-PyTorch memory, this process has 23.21 GiB memory in use. Of the allocated memory 22.81 GiB is allocated by PyTorch, and 31.38 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

@@ -1,0 +1,470 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "image_size": 512,
+  "summary": {
+    "items": 20,
+    "json_ok_rate": 1.0,
+    "fields_scored": 80,
+    "share_conf_over_0.99": 0.062,
+    "share_conf_under_0.80": 0.7,
+    "conf_deciles": [
+      0.418,
+      0.479,
+      0.526,
+      0.569,
+      0.637,
+      0.671,
+      0.803,
+      0.886,
+      0.974
+    ],
+    "conf_min": 0.3399,
+    "seller_agreement_rate": 0.288,
+    "seller_fields_compared": 52,
+    "p50_latency_s": 0.915
+  },
+  "rows": [
+    {
+      "item_id": "B0833P8ZCP",
+      "product_type": "SHOES",
+      "answer": {
+        "color": "other",
+        "material": "other",
+        "pattern": "none",
+        "style": "other"
+      },
+      "confidence": {
+        "color": 0.5339,
+        "material": 0.5511,
+        "pattern": 0.9907,
+        "style": 0.8706
+      },
+      "latency_s": 1.37,
+      "seller_values": {
+        "color": "Microsuede Cognac",
+        "style": "Listilla Espadrille Flatform Ankle Strap Sandal",
+        "fabric_type": "Upper: 100% Polyurethane; Lining: 100% Polyurethane; Outer Sole: 100% TPR"
+      }
+    },
+    {
+      "item_id": "B075YP38V2",
+      "product_type": "CHAIR",
+      "answer": {
+        "color": "other",
+        "material": "fabric",
+        "pattern": "none",
+        "style": "mid-century"
+      },
+      "confidence": {
+        "color": 0.6465,
+        "material": 0.4824,
+        "pattern": 0.9743,
+        "style": 0.794
+      },
+      "latency_s": 1.05,
+      "seller_values": {
+        "color": "Ash Grey",
+        "material": "Textile",
+        "style": "Mid-Century Modern",
+        "fabric_type": "90% Polyester, 10% Linen",
+        "finish_type": "espresso"
+      }
+    },
+    {
+      "item_id": "B083VMZL96",
+      "product_type": "SOFA",
+      "answer": {
+        "color": "brown",
+        "material": "fabric",
+        "pattern": "none",
+        "style": "modern"
+      },
+      "confidence": {
+        "color": 0.5045,
+        "material": 0.5549,
+        "pattern": 0.9801,
+        "style": 0.4484
+      },
+      "latency_s": 1.06,
+      "seller_values": {
+        "color": "Dark Brown and Beige Mossy",
+        "material": "Fabric",
+        "style": "Contemporary"
+      }
+    },
+    {
+      "item_id": "B07MD9KGPZ",
+      "product_type": "TABLE",
+      "answer": {
+        "color": "other",
+        "material": "other",
+        "pattern": "none",
+        "style": "none"
+      },
+      "confidence": {
+        "color": 0.442,
+        "material": 0.5274,
+        "pattern": 0.9962,
+        "style": 0.3551
+      },
+      "latency_s": 1.36,
+      "seller_values": {
+        "color": "Black",
+        "material": "Wood"
+      }
+    },
+    {
+      "item_id": "B072FRNXQC",
+      "product_type": "RUG",
+      "answer": {
+        "color": "other",
+        "material": "other",
+        "pattern": "none",
+        "style": "other"
+      },
+      "confidence": {
+        "color": 0.6024,
+        "material": 0.8139,
+        "pattern": 0.9046,
+        "style": 0.596
+      },
+      "latency_s": 1.06,
+      "seller_values": {
+        "color": "Natural",
+        "material": "sisal",
+        "style": "Transitional"
+      }
+    },
+    {
+      "item_id": "B07NRMXV5C",
+      "product_type": "LAMP",
+      "answer": {
+        "color": "white",
+        "material": "metal",
+        "pattern": "none",
+        "style": "modern"
+      },
+      "confidence": {
+        "color": 0.8071,
+        "material": 0.4793,
+        "pattern": 0.9943,
+        "style": 0.4512
+      },
+      "latency_s": 1.37,
+      "seller_values": {
+        "color": "White",
+        "material": "Metal",
+        "style": "Floor Lamp",
+        "finish_type": "Polished"
+      }
+    },
+    {
+      "item_id": "B0825D3547",
+      "product_type": "LIGHT_FIXTURE",
+      "answer": {
+        "color": "black",
+        "material": "metal",
+        "pattern": "none",
+        "style": "mid-century"
+      },
+      "confidence": {
+        "color": 0.5228,
+        "material": 0.4794,
+        "pattern": 0.9877,
+        "style": 0.8213
+      },
+      "latency_s": 1.38,
+      "seller_values": {
+        "color": "Matte Black",
+        "material": "Metal",
+        "style": "Sconce",
+        "finish_type": "matte"
+      }
+    },
+    {
+      "item_id": "B07MCDBCHV",
+      "product_type": "SHOES",
+      "answer": {
+        "color": "other",
+        "material": "leather",
+        "pattern": "none",
+        "style": "bohemian"
+      },
+      "confidence": {
+        "color": 0.5609,
+        "material": 0.6028,
+        "pattern": 0.6932,
+        "style": 0.3624
+      },
+      "latency_s": 1.6,
+      "seller_values": {
+        "color": "Grey",
+        "style": "Loafers"
+      }
+    },
+    {
+      "item_id": "B08568VZZN",
+      "product_type": "CHAIR",
+      "answer": {
+        "color": "silver",
+        "material": "fabric",
+        "pattern": "none",
+        "style": "modern"
+      },
+      "confidence": {
+        "color": 0.486,
+        "material": 0.4738,
+        "pattern": 0.9684,
+        "style": 0.897
+      },
+      "latency_s": 0.77,
+      "seller_values": {
+        "color": "Silver",
+        "material": "Metal"
+      }
+    },
+    {
+      "item_id": "B07HZ7TKY7",
+      "product_type": "SOFA",
+      "answer": {
+        "color": "other",
+        "material": "fabric",
+        "pattern": "none",
+        "style": "modern"
+      },
+      "confidence": {
+        "color": 0.4175,
+        "material": 0.7639,
+        "pattern": 0.9718,
+        "style": 0.3527
+      },
+      "latency_s": 0.77,
+      "seller_values": {
+        "color": "Dove",
+        "material": "Wood",
+        "style": "Transitional",
+        "fabric_type": "95% Polyester, 5% Nylon"
+      }
+    },
+    {
+      "item_id": "B07H8PTW71",
+      "product_type": "TABLE",
+      "answer": {
+        "color": "white",
+        "material": "other",
+        "pattern": "none",
+        "style": "modern"
+      },
+      "confidence": {
+        "color": 0.7537,
+        "material": 0.724,
+        "pattern": 0.998,
+        "style": 0.4043
+      },
+      "latency_s": 0.77,
+      "seller_values": {
+        "color": "Alpine White",
+        "style": "Wardrobe Storage"
+      }
+    },
+    {
+      "item_id": "B075Z8VVN2",
+      "product_type": "RUG",
+      "answer": {
+        "color": "other",
+        "material": "other",
+        "pattern": "other",
+        "style": "other"
+      },
+      "confidence": {
+        "color": 0.6528,
+        "material": 0.5254,
+        "pattern": 0.6405,
+        "style": 0.6004
+      },
+      "latency_s": 0.69,
+      "seller_values": {
+        "color": "Marine Blue",
+        "material": "wool",
+        "style": "Modern",
+        "item_shape": "Rectangular"
+      }
+    },
+    {
+      "item_id": "B075X12QV9",
+      "product_type": "LAMP",
+      "answer": {
+        "color": "black",
+        "material": "ceramic",
+        "pattern": "none",
+        "style": "modern"
+      },
+      "confidence": {
+        "color": 0.8291,
+        "material": 0.5399,
+        "pattern": 0.6469,
+        "style": 0.9614
+      },
+      "latency_s": 0.93,
+      "seller_values": {
+        "color": "Black",
+        "material": "Ceramic Fabric"
+      }
+    },
+    {
+      "item_id": "B07MHMJCVL",
+      "product_type": "LIGHT_FIXTURE",
+      "answer": {
+        "color": "other",
+        "material": "other",
+        "pattern": "none",
+        "style": "other"
+      },
+      "confidence": {
+        "color": 0.8741,
+        "material": 0.6607,
+        "pattern": 0.9982,
+        "style": 0.5299
+      },
+      "latency_s": 0.91,
+      "seller_values": {
+        "color": "Dark Bronze",
+        "style": "Pendant"
+      }
+    },
+    {
+      "item_id": "B07ZFPWL2D",
+      "product_type": "SHOES",
+      "answer": {
+        "color": "gold",
+        "material": "leather",
+        "pattern": "none",
+        "style": "other"
+      },
+      "confidence": {
+        "color": 0.4414,
+        "material": 0.4828,
+        "pattern": 0.9057,
+        "style": 0.3519
+      },
+      "latency_s": 0.92,
+      "seller_values": {
+        "color": "Gold",
+        "style": "Fashion Slippers"
+      }
+    },
+    {
+      "item_id": "B082VML3Q3",
+      "product_type": "CHAIR",
+      "answer": {
+        "color": "other",
+        "material": "leather",
+        "pattern": "none",
+        "style": "mid-century"
+      },
+      "confidence": {
+        "color": 0.6714,
+        "material": 0.6337,
+        "pattern": 0.8815,
+        "style": 0.8211
+      },
+      "latency_s": 0.59,
+      "seller_values": {
+        "color": "Taupe Leather",
+        "material": "Leather",
+        "style": "Mid-Century Modern"
+      }
+    },
+    {
+      "item_id": "B07P6JVMJL",
+      "product_type": "SOFA",
+      "answer": {
+        "color": "other",
+        "material": "leather",
+        "pattern": "none",
+        "style": "mid-century"
+      },
+      "confidence": {
+        "color": 0.7667,
+        "material": 0.4209,
+        "pattern": 0.8877,
+        "style": 0.6702
+      },
+      "latency_s": 0.61,
+      "seller_values": {
+        "color": "Caramel",
+        "material": "wood",
+        "style": "Modern style"
+      }
+    },
+    {
+      "item_id": "B075Z8KX91",
+      "product_type": "TABLE",
+      "answer": {
+        "color": "other",
+        "material": "other",
+        "pattern": "none",
+        "style": "rustic"
+      },
+      "confidence": {
+        "color": 0.3399,
+        "material": 0.4147,
+        "pattern": 0.9307,
+        "style": 0.5805
+      },
+      "latency_s": 0.59,
+      "seller_values": {
+        "color": "Sandstone",
+        "material": "pine",
+        "style": "Side Table",
+        "item_shape": "Square"
+      }
+    },
+    {
+      "item_id": "B0723DGNJ5",
+      "product_type": "RUG",
+      "answer": {
+        "color": "other",
+        "material": "other",
+        "pattern": "other",
+        "style": "other"
+      },
+      "confidence": {
+        "color": 0.7851,
+        "material": 0.6047,
+        "pattern": 0.6002,
+        "style": 0.6393
+      },
+      "latency_s": 0.57,
+      "seller_values": {
+        "color": "Light Blue",
+        "material": "wool",
+        "style": "Contemporary",
+        "item_shape": "Rectangular"
+      }
+    },
+    {
+      "item_id": "B0825D873D",
+      "product_type": "LAMP",
+      "answer": {
+        "color": "black",
+        "material": "wood",
+        "pattern": "striped",
+        "style": "none"
+      },
+      "confidence": {
+        "color": 0.5322,
+        "material": 0.6472,
+        "pattern": 0.5195,
+        "style": 0.4467
+      },
+      "latency_s": 0.51,
+      "seller_values": {
+        "color": "Floor",
+        "material": "Wood",
+        "style": "Floor",
+        "item_shape": "drum"
+      }
+    }
+  ]
+}

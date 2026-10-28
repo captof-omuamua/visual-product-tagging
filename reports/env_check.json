@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "system": "Linux",
+  "kernel": "7.0.0-38-generic",
+  "python": "3.14.4",
+  "gpus": [
+    {
+      "name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+      "driver": "595.99.02",
+      "vram_gb": 23.9,
+      "compute_capability": "12.0"
+    }
+  ],
+  "driver_cuda": "13.2",
+  "uv": "/home/garud/.local/bin/uv",
+  "disk_free_gb": 644.4,
+  "blockers": [],
+  "warnings": []
+}

@@ -1,0 +1,28 @@
+# Environments and caches
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Never commit data, weights or adapters; scripts download or rebuild them
+data/
+outputs/
+*.safetensors
+
+# Logs stay local; the JSON and Markdown reports are committed as evidence
+reports/*.log
+
+# Secrets: the Gemini key lives only in the terminal environment
+.env
+*.key
+
+# Unsloth writes compiled kernels here at training time
+unsloth_compiled_cache/
+reports/pilot_run1/
+
+# Personal working notes for Claude Code sessions (kept local)
+CLAUDE.md
+
+# Server logs in report subfolders
+reports/**/*.log

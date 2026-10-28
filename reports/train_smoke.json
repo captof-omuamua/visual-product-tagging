@@ -1,0 +1,130 @@
+{
+  "ok": true,
+  "model": "Qwen/Qwen3.5-4B",
+  "steps": 30,
+  "rank": 16,
+  "batch_size": 2,
+  "image_size": 512,
+  "images_per_item": 3,
+  "load_in_4bit": false,
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "unsloth": "2026.10.9",
+    "unsloth_zoo": "2026.10.9",
+    "transformers": "5.17.0",
+    "trl": "1.15.0",
+    "peft": "0.21.2",
+    "accelerate": "1.15.0",
+    "bitsandbytes": "0.50.2",
+    "datasets": "4.8.5"
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+    "capability": [
+      12,
+      0
+    ],
+    "torch_cuda": "13.0",
+    "arch_list": [
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ]
+  },
+  "train_examples": 96,
+  "load_s": 2216.4,
+  "thinking": {
+    "inference_default": {
+      "has_think": true,
+      "tail": "|><|vision_start|><|image_pad|><|vision_end|>What colour and shape is the object in this product photo? Answer in JSON.<|im_end|>\n<|im_start|>assistant\n<think>\n"
+    },
+    "inference_thinking_off": {
+      "has_think": true,
+      "tail": "start|><|image_pad|><|vision_end|>What colour and shape is the object in this product photo? Answer in JSON.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+    },
+    "training_default": {
+      "has_think": true,
+      "tail": "hape is the object in this product photo? Answer in JSON.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n{\"color\": \"yellow\", \"shape\": \"triangle\"}<|im_end|>\n"
+    },
+    "training_thinking_off": {
+      "has_think": true,
+      "tail": "hape is the object in this product photo? Answer in JSON.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n{\"color\": \"yellow\", \"shape\": \"triangle\"}<|im_end|>\n"
+    },
+    "training_matches_thinking_off": true
+  },
+  "train_s": 78.1,
+  "peak_vram_gb": 9.38,
+  "memory_ok": true,
+  "losses": [
+    2.89,
+    2.975,
+    2.6979,
+    1.8738,
+    1.1461,
+    0.8511,
+    0.5765,
+    0.2837,
+    0.1239,
+    0.0453,
+    0.0187,
+    0.0067,
+    0.0042,
+    0.0033,
+    0.0028,
+    0.0024,
+    0.0022,
+    0.0019,
+    0.0016,
+    0.0015,
+    0.0013,
+    0.0011,
+    0.001,
+    0.0009,
+    0.0009,
+    0.0008,
+    0.0007,
+    0.0007,
+    0.0007,
+    0.0007
+  ],
+  "loss_first": 2.89,
+  "loss_last": 0.0007,
+  "loss_fell": true,
+  "adapter_dir": "/home/garud/catalog-vlm-cascade/outputs/smoke-lora",
+  "adapter_config": {
+    "r": 16,
+    "lora_alpha": 16,
+    "target_modules": "(?:.*?(?:language|text).*?(?:self_attn|attention|attn|mixer|mlp|feed_forward|ffn|dense|mixer).*?\\.(?:qkv|proj|linear_fc1|linear_fc2|out_proj|in_proj_qkv|in_proj_z|in_proj_b|in_proj_a|gate_proj|up_proj|down_proj|q_proj|k_proj|v_proj|o_proj))|(?:\\bmodel\\.layers\\.[\\d]{1,}(?!.*\\.experts\\.\\d)\\..*?(?:self_attn|attention|attn|mixer|mlp|feed_forward|ffn|dense|mixer).*?\\.(?:(?:qkv|proj|linear_fc1|linear_fc2|out_proj|in_proj_qkv|in_proj_z|in_proj_b|in_proj_a|gate_proj|up_proj|down_proj|q_proj|k_proj|v_proj|o_proj)))",
+    "base_model_name_or_path": "Qwen/Qwen3.5-4B"
+  },
+  "generation": [
+    {
+      "target": "{\"color\": \"yellow\", \"shape\": \"diamond\"}",
+      "output": "{\"color\": \"yellow\", \"shape\": \"diamond\"}",
+      "exact": true
+    },
+    {
+      "target": "{\"color\": \"orange\", \"shape\": \"square\"}",
+      "output": "{\"color\": \"orange\", \"shape\": \"square\"}",
+      "exact": true
+    },
+    {
+      "target": "{\"color\": \"blue\", \"shape\": \"circle\"}",
+      "output": "{\"color\": \"blue\", \"shape\": \"circle\"}",
+      "exact": true
+    },
+    {
+      "target": "{\"color\": \"red\", \"shape\": \"circle\"}",
+      "output": "{\"color\": \"red\", \"shape\": \"circle\"}",
+      "exact": true
+    }
+  ],
+  "merge_s": 12.9,
+  "merged_dir": "/home/garud/catalog-vlm-cascade/outputs/smoke-merged",
+  "merged_gb": 8.68,
+  "merged_ok": true
+}

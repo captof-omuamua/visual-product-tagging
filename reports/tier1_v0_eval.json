@@ -1,0 +1,134 @@
+{
+  "Tier 1 v0 (Qwen3.5-4B, fine-tuned)": {
+    "color": {
+      "n": 1094,
+      "agree": 0.924,
+      "seller": 0.871,
+      "seller_n": 957,
+      "cover@95": 0.903
+    },
+    "material": {
+      "n": 1094,
+      "agree": 0.78,
+      "seller": 0.607,
+      "seller_n": 476,
+      "cover@95": 0.533
+    },
+    "pattern": {
+      "n": 1094,
+      "agree": 0.87,
+      "seller": 0.812,
+      "seller_n": 154,
+      "cover@95": 0.716
+    },
+    "style": {
+      "n": 1094,
+      "agree": 0.77,
+      "seller": 0.484,
+      "seller_n": 618,
+      "cover@95": 0.569
+    },
+    "shape": {
+      "n": 184,
+      "agree": 0.946,
+      "seller": 0.819,
+      "seller_n": 127,
+      "cover@95": 0.989
+    },
+    "finish": {
+      "n": 122,
+      "agree": 0.779,
+      "seller": 0.824,
+      "seller_n": 51,
+      "cover@95": 0.352
+    }
+  },
+  "Qwen3.5-4B, not fine-tuned": {
+    "color": {
+      "n": 1094,
+      "agree": 0.888,
+      "seller": 0.772,
+      "seller_n": 957,
+      "cover@95": 0.878
+    },
+    "material": {
+      "n": 1094,
+      "agree": 0.86,
+      "seller": 0.603,
+      "seller_n": 476,
+      "cover@95": 0.72
+    },
+    "pattern": {
+      "n": 1094,
+      "agree": 0.856,
+      "seller": 0.805,
+      "seller_n": 154,
+      "cover@95": 0.753
+    },
+    "style": {
+      "n": 1094,
+      "agree": 0.686,
+      "seller": 0.466,
+      "seller_n": 618,
+      "cover@95": 0.462
+    },
+    "shape": {
+      "n": 184,
+      "agree": 0.951,
+      "seller": 0.843,
+      "seller_n": 127,
+      "cover@95": 1.0
+    },
+    "finish": {
+      "n": 122,
+      "agree": 0.885,
+      "seller": 0.863,
+      "seller_n": 51,
+      "cover@95": 0.721
+    }
+  },
+  "Gemma 4 26B (Tier 2)": {
+    "color": {
+      "n": 1094,
+      "agree": 0.907,
+      "seller": 0.845,
+      "seller_n": 957,
+      "cover@95": 0.892
+    },
+    "material": {
+      "n": 1094,
+      "agree": 0.755,
+      "seller": 0.653,
+      "seller_n": 476,
+      "cover@95": 0.553
+    },
+    "pattern": {
+      "n": 1094,
+      "agree": 0.835,
+      "seller": 0.792,
+      "seller_n": 154,
+      "cover@95": 0.537
+    },
+    "style": {
+      "n": 1094,
+      "agree": 0.759,
+      "seller": 0.469,
+      "seller_n": 618,
+      "cover@95": 0.487
+    },
+    "shape": {
+      "n": 184,
+      "agree": 0.973,
+      "seller": 0.858,
+      "seller_n": 127,
+      "cover@95": 1.0
+    },
+    "finish": {
+      "n": 122,
+      "agree": 0.77,
+      "seller": 0.824,
+      "seller_n": 51,
+      "cover@95": 0.5
+    }
+  }
+}
