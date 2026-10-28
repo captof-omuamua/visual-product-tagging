@@ -18,7 +18,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from catalog_cascade.schema import fields_for, normalize
+from catalog_cascade.schema import canonical, fields_for, normalize
 
 ROOT = Path(__file__).resolve().parents[2]
 KEY = "qwen3vl8b"
@@ -65,11 +65,13 @@ def main() -> int:
                 if field not in pred or field not in truth:
                     continue
                 conf = (preds[item_id].get("confidence") or {}).get(field) or 0.0
-                pairs.append((conf, pred[field] == truth[field]))
+                ptype = p["product_type"]  # compare in today's lists (e.g. mesh -> fabric)
+                value = canonical(field, ptype, pred[field])
+                pairs.append((conf, value == canonical(field, ptype, truth[field])))
                 s = normalize(field, p["product_type"], p["seller_values"].get(
                     {"shape": "item_shape", "finish": "finish_type"}.get(field, field)))
                 if s:
-                    seller.append(pred[field] == s)
+                    seller.append(value == s)
             if pairs:
                 results[label][field] = {
                     "n": len(pairs),

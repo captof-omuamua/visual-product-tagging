@@ -24,7 +24,7 @@ sys.path.insert(0, str(ROOT / "scripts" / "stage1"))
 from train_smoke import accepted  # noqa: E402  (drops arguments a library version lacks)
 
 from catalog_cascade.labelling import prompt_for  # noqa: E402
-from catalog_cascade.schema import fields_for  # noqa: E402
+from catalog_cascade.schema import canonical, fields_for  # noqa: E402
 
 
 def load_examples(image_size: int) -> list[dict]:
@@ -39,7 +39,9 @@ def load_examples(image_size: int) -> list[dict]:
     for p in map(json.loads, (ROOT / "data" / "products.jsonl").open()):
         if splits.get(p["item_id"]) != "train" or p["item_id"] not in gemma:
             continue
-        answer = {f: gemma[p["item_id"]][f] for f in fields_for(p["product_type"])}
+        ptype = p["product_type"]  # labels mapped into today's lists (e.g. mesh -> fabric)
+        answer = {f: canonical(f, ptype, gemma[p["item_id"]].get(f)) or "none"
+                  for f in fields_for(ptype)}
         images = []
         for i in p["images"]:
             im = Image.open(ROOT / "data" / "images" / f"{i}.jpg").convert("RGB")

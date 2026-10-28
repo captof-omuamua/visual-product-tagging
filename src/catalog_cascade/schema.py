@@ -1,4 +1,4 @@
-"""Value lists and synonym maps per field (v0, built from ABO's most common seller values).
+"""Value lists and synonym maps per field (v1: v0 minus values the two teachers confused).
 
 Every field's answer is one value from its closed list, or "other" (doesn't fit the list)
 or "none" (doesn't apply, or can't be seen). `normalize` turns a seller's free text into a
@@ -14,14 +14,16 @@ FOOTWEAR = {"SHOES"}
 
 COLORS = ["black", "white", "grey", "brown", "beige", "blue", "green", "red", "pink",
           "yellow", "orange", "purple", "gold", "silver", "bronze", "clear", "multicolor"]
+# v1 merges values photos can't separate (stage 2, 28 Oct): mesh -> fabric,
+# faux leather -> leather (real or faux), textured -> solid, contemporary -> modern,
+# athletic -> sneaker. Old values still map through SYNONYMS.
 MATERIALS = ["wood", "metal", "glass", "plastic", "stone", "ceramic", "fabric", "wool",
-             "cotton", "leather", "faux leather", "suede", "mesh", "rubber", "natural fiber",
-             "wicker"]
+             "cotton", "leather", "suede", "rubber", "natural fiber", "wicker"]
 PATTERNS = ["solid", "striped", "checked", "floral", "geometric", "abstract", "medallion",
-            "textured", "color block"]
-HOME_STYLES = ["modern", "contemporary", "mid-century", "transitional", "traditional",
+            "color block"]
+HOME_STYLES = ["modern", "mid-century", "transitional", "traditional",
                "rustic", "industrial", "glam", "bohemian", "coastal", "scandinavian"]
-SHOE_STYLES = ["athletic", "sneaker", "formal", "loafer", "flat", "sandal", "boot", "slipper",
+SHOE_STYLES = ["sneaker", "formal", "loafer", "flat", "sandal", "boot", "slipper",
                "heel"]
 SHAPES = ["rectangular", "round", "square", "oval", "runner"]
 FINISHES = ["brushed", "matte", "polished", "satin", "oil-rubbed", "antique", "glossy"]
@@ -42,8 +44,8 @@ SYNONYMS = {
     "material": {"polyester": "fabric", "textile": "fabric", "canvas": "fabric",
                  "linen": "fabric", "velvet": "fabric", "nylon": "fabric", "knit": "fabric",
                  "denim": "fabric", "microfiber": "fabric", "chenille": "fabric",
-                 "polyurethane": "faux leather", "pu": "faux leather",
-                 "leatherette": "faux leather", "vegan leather": "faux leather",
+                 "mesh": "fabric", "faux leather": "leather", "polyurethane": "leather",
+                 "pu": "leather", "leatherette": "leather", "vegan leather": "leather",
                  "engineered wood": "wood", "mdf": "wood", "pine": "wood", "oak": "wood",
                  "hardwood": "wood", "beech": "wood", "teak": "wood", "walnut": "wood",
                  "mango wood": "wood", "plywood": "wood", "aluminum": "metal",
@@ -52,15 +54,16 @@ SYNONYMS = {
                  "jute": "natural fiber", "sisal": "natural fiber", "seagrass": "natural fiber",
                  "bamboo": "natural fiber", "rattan": "wicker", "marble": "stone",
                  "granite": "stone", "concrete": "stone", "porcelain": "ceramic"},
-    "pattern": {"plain": "solid", "plain-coloured": "solid", "stripe": "striped",
-                "stripes": "striped", "plaid": "checked", "checkered": "checked",
-                "trellis": "geometric", "moroccan": "geometric", "chevron": "geometric",
-                "ikat": "geometric", "geo": "geometric", "oriental": "medallion",
-                "persian": "medallion"},
-    "home_style": {"mid-century modern": "mid-century", "farmhouse": "rustic",
-                   "farm_house": "rustic", "classic": "traditional", "boho": "bohemian",
-                   "glam": "glam", "nautical": "coastal"},
-    "shoe_style": {"running": "athletic", "walking": "athletic", "training": "athletic",
+    "pattern": {"textured": "solid", "plain": "solid", "plain-coloured": "solid",
+                "stripe": "striped", "stripes": "striped", "plaid": "checked",
+                "checkered": "checked", "trellis": "geometric", "moroccan": "geometric",
+                "chevron": "geometric", "ikat": "geometric", "geo": "geometric",
+                "oriental": "medallion", "persian": "medallion"},
+    "home_style": {"contemporary": "modern", "mid-century modern": "mid-century",
+                   "farmhouse": "rustic", "farm_house": "rustic", "classic": "traditional",
+                   "boho": "bohemian", "glam": "glam", "nautical": "coastal"},
+    "shoe_style": {"athletic": "sneaker", "running": "sneaker", "walking": "sneaker",
+                   "training": "sneaker",
                    "sneakers": "sneaker", "low-top": "sneaker", "derby": "formal",
                    "oxford": "formal", "brogue": "formal", "monk": "formal",
                    "loafers": "loafer", "moccasin": "loafer", "ballet": "flat",
@@ -119,3 +122,14 @@ def normalize(field: str, ptype: str, text: str | None) -> str | None:
             if best is None or rank < best:
                 best = rank
     return best[2] if best else None
+
+
+def canonical(field: str, ptype: str, value: str | None) -> str | None:
+    """A stored answer in today's lists: "other"/"none" kept, retired values mapped on.
+
+    Labels made with an older list (e.g. "mesh") become today's value ("fabric"), so old
+    label files stay usable after a list change. Unknown values become "other".
+    """
+    if value in (None, OTHER, NONE):
+        return value
+    return normalize(field, ptype, value) or OTHER

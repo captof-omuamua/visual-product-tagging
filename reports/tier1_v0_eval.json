@@ -9,24 +9,24 @@
     },
     "material": {
       "n": 1094,
-      "agree": 0.78,
-      "seller": 0.607,
+      "agree": 0.917,
+      "seller": 0.758,
       "seller_n": 476,
-      "cover@95": 0.533
+      "cover@95": 0.94
     },
     "pattern": {
       "n": 1094,
-      "agree": 0.87,
-      "seller": 0.812,
+      "agree": 0.929,
+      "seller": 0.87,
       "seller_n": 154,
-      "cover@95": 0.716
+      "cover@95": 0.941
     },
     "style": {
       "n": 1094,
-      "agree": 0.77,
-      "seller": 0.484,
+      "agree": 0.866,
+      "seller": 0.872,
       "seller_n": 618,
-      "cover@95": 0.569
+      "cover@95": 0.644
     },
     "shape": {
       "n": 184,
@@ -53,24 +53,24 @@
     },
     "material": {
       "n": 1094,
-      "agree": 0.86,
-      "seller": 0.603,
+      "agree": 0.945,
+      "seller": 0.779,
       "seller_n": 476,
-      "cover@95": 0.72
+      "cover@95": 0.992
     },
     "pattern": {
       "n": 1094,
-      "agree": 0.856,
-      "seller": 0.805,
+      "agree": 0.902,
+      "seller": 0.864,
       "seller_n": 154,
-      "cover@95": 0.753
+      "cover@95": 0.844
     },
     "style": {
       "n": 1094,
-      "agree": 0.686,
-      "seller": 0.466,
+      "agree": 0.857,
+      "seller": 0.838,
       "seller_n": 618,
-      "cover@95": 0.462
+      "cover@95": 0.507
     },
     "shape": {
       "n": 184,
@@ -97,24 +97,24 @@
     },
     "material": {
       "n": 1094,
-      "agree": 0.755,
-      "seller": 0.653,
+      "agree": 0.901,
+      "seller": 0.767,
       "seller_n": 476,
-      "cover@95": 0.553
+      "cover@95": 0.863
     },
     "pattern": {
       "n": 1094,
-      "agree": 0.835,
-      "seller": 0.792,
+      "agree": 0.903,
+      "seller": 0.883,
       "seller_n": 154,
-      "cover@95": 0.537
+      "cover@95": 0.722
     },
     "style": {
       "n": 1094,
-      "agree": 0.759,
-      "seller": 0.469,
+      "agree": 0.846,
+      "seller": 0.848,
       "seller_n": 618,
-      "cover@95": 0.487
+      "cover@95": 0.569
     },
     "shape": {
       "n": 184,

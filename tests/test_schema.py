@@ -6,7 +6,7 @@ def test_synonyms_and_first_word_wins():
     assert schema.normalize("color", "SHOES", "Microsuede Cognac") == "brown"
     assert schema.normalize("material", "SOFA", "velvet, hardwood frame, metal legs") == "fabric"
     assert schema.normalize("style", "CHAIR", "Mid-Century Modern") == "mid-century"
-    assert schema.normalize("style", "SHOES", "Running Shoes") == "athletic"
+    assert schema.normalize("style", "SHOES", "Running Shoes") == "sneaker"
 
 
 def test_no_match_gives_no_vote():
@@ -21,3 +21,13 @@ def test_type_fields():
     assert set(schema.fields_for("SHOES")) == {"color", "material", "pattern", "style"}
     enum = schema.json_schema("TABLE")["properties"]["shape"]["enum"]
     assert enum[-2:] == ["other", "none"]
+
+
+def test_v1_merges_and_canonical():
+    assert "mesh" not in schema.MATERIALS and "faux leather" not in schema.MATERIALS
+    assert schema.canonical("material", "SHOES", "mesh") == "fabric"
+    assert schema.canonical("material", "CHAIR", "faux leather") == "leather"
+    assert schema.canonical("style", "SOFA", "contemporary") == "modern"
+    assert schema.canonical("style", "SHOES", "athletic") == "sneaker"
+    assert schema.canonical("pattern", "RUG", "textured") == "solid"
+    assert schema.canonical("color", "RUG", "none") == "none"

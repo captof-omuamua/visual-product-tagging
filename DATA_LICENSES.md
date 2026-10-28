@@ -12,3 +12,11 @@ regenerate them.
 | [gemma-4-26B-A4B-it-AWQ-4bit](https://huggingface.co/cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit) | Teacher 2 | Apache-2.0 (community quantisation of google/gemma-4-26B-A4B-it) | Zero-shot |
 | [Marqo-Ecommerce-L](https://huggingface.co/Marqo/marqo-ecommerce-embeddings-L) | Tier 0, stage 2 onward; its tokenizer in stage 1 | Apache-2.0 | Frozen encoder |
 | Gemini API outputs | Mini-pilot, reference run, tie-breaks | Google's API terms | Proprietary service. Whether outputs may be used as training labels is an open item in the design doc |
+
+## ImplicitAVE benchmark (added 28 Oct 2026)
+
+| Item | Used in | Licence | Notes |
+|---|---|---|---|
+| [ImplicitAVE](https://github.com/HenryPengZou/ImplicitAVE) (Zou et al., ACL Findings 2024) | Training (68k, from MAVE) and the 1,610 hand-checked test questions | No licence file in the repository | Used for research evaluation and cited; not redistributed. Scripts expect it under `data/raw/implicitave/` (git-ignored) |
+| [Qwen3-VL-8B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct) | Zero-shot baseline | Apache-2.0 | |
+| [gemma-4-26B-A4B-it-AWQ-4bit](https://huggingface.co/cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit) | Big model in the cascade | Apache-2.0 | Zero-shot |

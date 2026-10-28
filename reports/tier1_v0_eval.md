@@ -14,25 +14,25 @@ Answer key: qwen3vl8b (outside the cascade). Agree = same value as the key; sell
 
 | Model | Agree | Seller | Cover@95 |
 |---|---|---|---|
-| Tier 1 v0 (Qwen3.5-4B, fine-tuned) | 78% | 61% (n=476) | 53% |
-| Qwen3.5-4B, not fine-tuned | 86% | 60% (n=476) | 72% |
-| Gemma 4 26B (Tier 2) | 76% | 65% (n=476) | 55% |
+| Tier 1 v0 (Qwen3.5-4B, fine-tuned) | 92% | 76% (n=476) | 94% |
+| Qwen3.5-4B, not fine-tuned | 94% | 78% (n=476) | 99% |
+| Gemma 4 26B (Tier 2) | 90% | 77% (n=476) | 86% |
 
 ## pattern (n = 1094)
 
 | Model | Agree | Seller | Cover@95 |
 |---|---|---|---|
-| Tier 1 v0 (Qwen3.5-4B, fine-tuned) | 87% | 81% (n=154) | 72% |
-| Qwen3.5-4B, not fine-tuned | 86% | 80% (n=154) | 75% |
-| Gemma 4 26B (Tier 2) | 84% | 79% (n=154) | 54% |
+| Tier 1 v0 (Qwen3.5-4B, fine-tuned) | 93% | 87% (n=154) | 94% |
+| Qwen3.5-4B, not fine-tuned | 90% | 86% (n=154) | 84% |
+| Gemma 4 26B (Tier 2) | 90% | 88% (n=154) | 72% |
 
 ## style (n = 1094)
 
 | Model | Agree | Seller | Cover@95 |
 |---|---|---|---|
-| Tier 1 v0 (Qwen3.5-4B, fine-tuned) | 77% | 48% (n=618) | 57% |
-| Qwen3.5-4B, not fine-tuned | 69% | 47% (n=618) | 46% |
-| Gemma 4 26B (Tier 2) | 76% | 47% (n=618) | 49% |
+| Tier 1 v0 (Qwen3.5-4B, fine-tuned) | 87% | 87% (n=618) | 64% |
+| Qwen3.5-4B, not fine-tuned | 86% | 84% (n=618) | 51% |
+| Gemma 4 26B (Tier 2) | 85% | 85% (n=618) | 57% |
 
 ## shape (n = 184)
 
