@@ -21,8 +21,6 @@ reports/*.log
 unsloth_compiled_cache/
 reports/pilot_run1/
 
-# Personal working notes for Claude Code sessions (kept local)
-CLAUDE.md
 
 # Server logs in report subfolders
 reports/**/*.log

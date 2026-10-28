@@ -1,48 +1,66 @@
-# Product attributes from photos with a small local VLM
+# Visual Product Tagging
 
-**A fine-tuned 4B vision-language model reads product attributes from photos (sleeve
-style, heel height, material…) almost as well as GPT-4V: 85.3% vs 86.8%. It runs on one
-GPU for about ₹0.67 per 1,000 questions, and it knows when it's unsure.**
+**Tagging product attributes from photos with a small open model, at GPT-4V level.**
+
+*Sisir Kausthubh*
+
+A 4-billion-parameter vision-language model, fine-tuned in 48 minutes on one laptop GPU,
+tags products from their photos (sleeve style, neckline, heel height, material, pattern…)
+with **85.3% accuracy on a hand-checked public benchmark: 1.4 points from GPT-4V, and
+17.5 points above the best fine-tuned model in the benchmark paper.** It costs about
+**₹0.67 per 1,000 products**, runs fully on local hardware, and flags the answers it isn't
+sure about.
+
+## Highlights
+
+- **GPT-4V-level accuracy from a 4B open model:** 85.3% vs GPT-4V's 86.8% on all 1,610
+  hand-checked questions.
+- **Ahead of GPT-4V in 2 of 5 domains:** Clothing (**88.0 vs 77.4**, the benchmark's hardest
+  domain) and Jewelry & accessories (92.3 vs 90.5).
+- **+17.5 points (+26% relative) over the best fine-tuned model in the paper** (LAVIN, 67.8).
+- **More accurate than a 26B model, at a quarter of the cost:** the fine-tuned 4B beats
+  Gemma 4 26B-A4B (85.3 vs 82.2) at ₹0.67 vs ₹2.75 per 1,000.
+- **Knows when it's unsure:** 79% of products are tagged automatically at 94.6% accuracy;
+  the other 21% are flagged for review. The cut-off was set on validation data, then
+  checked on test.
+- **Fast and cheap to train:** LoRA fine-tune in 48 min, 9.7 GB peak GPU memory; serves 24
+  questions per second with vLLM.
+
+![Scores on ImplicitAVE](reports/implicitave/scores.png)
 
 Online catalogues need attributes like "neckline" or "boot style" to power search filters,
 but sellers often leave them out. The value usually isn't written in the title. It has to
-be *inferred* from the photo, which is why vision models are needed.
-
-![Scores on ImplicitAVE](reports/implicitave/scores.png)
+be *inferred* from the photo, which is why a vision model is needed.
 
 ## Results
 
 Benchmark: [ImplicitAVE](https://github.com/HenryPengZou/ImplicitAVE) (Zou et al., ACL
 Findings 2024). It has 1,610 test questions across 5 domains, and every answer was
-**re-checked by hand** by the dataset's authors. Each question gives one photo, the title,
-the attribute and its allowed values. The score is the % answered correctly, which equals
-the paper's micro-F1.
+**checked by hand** by the dataset's authors. Each question gives one photo, the title, the
+attribute and its allowed values. The score is the % answered correctly, which equals the
+paper's micro-F1. Comparison rows are the results reported in that paper (Table 4).
 
 | Setup | Clothing | Footwear | Jewelry&GA | Food | Home | **All** | ₹ / 1,000 |
 |---|---|---|---|---|---|---|---|
-| **Qwen3.5-4B, fine-tuned (ours)** | **88.0** | 78.9 | 92.3 | 89.0 | 82.1 | **85.3** | **0.67** |
-| Qwen3.5-4B, zero-shot (ours) | 83.2 | 74.5 | 90.5 | 86.2 | 79.9 | 82.2 | 0.72 |
-| Gemma 4 26B-A4B, zero-shot (ours) | 82.7 | 69.4 | 93.6 | 86.4 | 81.8 | 82.2 | 2.75 |
-| Qwen3-VL-8B, zero-shot (ours) | 80.1 | 72.6 | 90.0 | 84.1 | 79.9 | 80.9 | 1.14 |
-| GPT-4V (paper) | 77.4 | 81.4 | 90.5 | 90.8 | 89.9 | 86.8 | – |
+| **Qwen3.5-4B, fine-tuned (this project)** | **88.0** | 78.9 | **92.3** | 89.0 | 82.1 | **85.3** | **0.67** |
+| Qwen3.5-4B, zero-shot | 83.2 | 74.5 | 90.5 | 86.2 | 79.9 | 82.2 | 0.72 |
+| Gemma 4 26B-A4B, zero-shot | 82.7 | 69.4 | 93.6 | 86.4 | 81.8 | 82.2 | 2.75 |
+| Qwen3-VL-8B, zero-shot | 80.1 | 72.6 | 90.0 | 84.1 | 79.9 | 80.9 | 1.14 |
+| GPT-4V (paper) | 77.4 | 81.4 | 90.5 | 90.8 | 89.9 | 86.8 | paid API |
 | LLaVA-1.5-13B (paper) | 49.1 | 63.7 | 81.8 | 76.2 | 80.3 | 71.9 | – |
+| Qwen-VL-7B (paper) | 59.7 | 57.7 | 84.1 | 76.9 | 74.0 | 70.9 | – |
 | LAVIN, fine-tuned (paper's best fine-tuned) | 65.9 | 75.4 | 78.6 | 60.8 | 64.3 | 67.8 | – |
 
-- **+17.5 points** over the paper's best fine-tuned model, and **1.4 points** behind GPT-4V.
-- **Clothing, the paper's hardest domain: 88.0 vs GPT-4V's 77.4.**
-- Fine-tuning took **48 minutes** on one laptop GPU (RTX 5090, 9.7 GB peak), using LoRA on
-  17,002 training examples.
-- The fine-tuned 4B model beats the 26B model and costs a quarter as much.
+### What this project adds beyond the benchmark paper
 
-### What this adds beyond the paper
-
-| | Paper | This project |
+| | Benchmark paper | This project |
 |---|---|---|
-| Cost per 1,000 questions | not reported | measured, for every model |
-| Knows when it's unsure | no | yes: a confidence score on every answer |
-| Auto-accept vs human review | no | yes: cut-offs chosen on validation data, checked on test (below) |
-| Runs locally, open weights | GPT-4V is a paid API | yes, Apache-2.0 models served with vLLM |
-| Tested sending hard cases to a bigger model | no | yes: it didn't help after fine-tuning (below) |
+| Accuracy of the best open / fine-tuned model | 71.9 / 67.8 | **85.3** |
+| Cost per 1,000 products | not reported | **measured for every model** |
+| Confidence on each answer | no | **yes** |
+| Auto-tag vs human review | no | **yes: 79% automatic at 94.6%** |
+| Runs locally on open weights | best result needs a paid API | **yes: Apache-2.0 models, vLLM** |
+| Small vs large model trade-off | not studied | **studied: fine-tuned 4B beats 26B** |
 
 ### Auto-accept or send to a person
 

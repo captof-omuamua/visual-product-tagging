@@ -198,10 +198,9 @@ def render(r: dict, status: str, failures: list[str], warnings: list[str]) -> st
     lines += ["", "## Next step", ""]
     if status == "PASS":
         lines.append("Commit reports/ and requirements/*-freeze.txt (`git add reports "
-                     "requirements && git commit -s`), then send this file to Claude to plan "
-                     "stage 2.")
+                     "requirements && git commit -s`), then use this file to plan stage 2.")
     else:
-        lines.append("Send this file and the failing step's log (reports/*.log) to Claude. "
+        lines.append("Check this file and the failing step's log (reports/*.log). "
                      "The fallbacks are in docs/stage1.md.")
     return "\n".join(lines) + "\n"
 

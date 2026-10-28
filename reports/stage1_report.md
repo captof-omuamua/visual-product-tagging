@@ -21,4 +21,4 @@ Run at 2026-10-27 19:12 UTC on NVIDIA GeForce RTX 5090 Laptop GPU (23.9 GB, driv
 
 ## Next step
 
-Commit reports/ and requirements/*-freeze.txt (`git add reports requirements && git commit -s`), then send this file to Claude to plan stage 2.
+Commit reports/ and requirements/*-freeze.txt (`git add reports requirements && git commit -s`), then use this file to plan stage 2.

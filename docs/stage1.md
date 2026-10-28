@@ -85,7 +85,7 @@ python3 scripts/stage1/report.py
 | Requests time out, or the server is stuck after the load | The deadlock class of bug | Keep the log; try the Docker image; then SGLang |
 | `grammar_enforced` fails | Structured output is off or bypassed | Send `reports/serve_merged.json` and the log; nothing in stage 5 should run until it passes |
 | Qwen3.5-27B won't start | Quantisation or cache settings | `QWEN_ARGS="--quantization moe_wna16" bash scripts/stage1/tier2_smoke.sh` (as on its model card), or `QWEN_ARGS="--max-cudagraph-capture-size 64"` for Mamba-cache errors |
-| A large model runs out of memory | 3 images of 768 px at 4k context | `GPU_UTIL=0.95`, or ask Claude to lower the image size for that model |
+| A large model runs out of memory | 3 images of 768 px at 4k context | `GPU_UTIL=0.95`, or lower the image size for that model |
 | `abo_check.py` can't download | Network or proxy | Download `archives/abo-listings.tar` from the ABO page by browser into `data/raw/abo/` and rerun |
 
 Time cap: if the toolchain still fails after one 2.5-hour session, switch the serving path
